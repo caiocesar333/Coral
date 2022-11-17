@@ -13,7 +13,7 @@ export function Navbar() {
                 <NavCategory />
             </Wrapper>
             <UserSection>
-                <SearchBar/>
+                <SearchBar placeholder="Search for products or brands....."/>
                 <IconWrapper>
                     <Favorite/>
                     <Profile/>

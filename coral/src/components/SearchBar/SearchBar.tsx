@@ -1,7 +1,20 @@
-import { Container, Input } from "./style";
+import { InputDiv, Img, Input } from "./style";
+import Search from "../../assets/search.svg"
 
-export function SearchBar() {
+
+export interface SearchBarProps {
+    children?: string,
+    placeholder: string
+}
+
+
+export function SearchBar({ placeholder }: SearchBarProps) {
     return (
-       <Input placeholder="Search for products or brands....."></Input>
+        <>
+            <InputDiv >
+                <Img src={Search} alt="search" />
+                <Input placeholder={placeholder}/>
+            </InputDiv>
+        </>
     )
 }
