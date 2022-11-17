@@ -70,6 +70,11 @@ export const Button = styled.div`
     outline: none;
     margin-left: 40px;
     margin-top: 15px;
+    &:hover{
+        cursor: pointer;
+        background: #FF8C4B;
+        transition: 300ms;
+    }
     `
 
 export const P = styled.p`
