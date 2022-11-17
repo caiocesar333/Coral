@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     margin-left: 20px;
+    cursor: grab;
 `;
 export const Wrapper = styled.div`
     width:50%;

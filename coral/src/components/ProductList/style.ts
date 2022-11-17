@@ -6,5 +6,4 @@ export const Container = styled.div`
     height: 300px;
     max-width: 98%;
     overflow-y: visible;
-    cursor: ghr;
 `;

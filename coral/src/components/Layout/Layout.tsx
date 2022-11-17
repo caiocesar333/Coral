@@ -1,4 +1,5 @@
 import { Banner } from "../Banner/Banner"
+import { Handpicked } from "../Handpicked/Handpicked"
 import { Hero } from "../Hero/Hero"
 import { Navbar } from "../Navbar/Navbar"
 import { NewArrival } from "../NewArrivals/NewArrivals"
@@ -12,6 +13,7 @@ export function Layout(){
             delays. For the latest updates, please check your order status"/>
            <Hero/>
            <NewArrival/>
+           <Handpicked/>
         </Container>
     )
 }
