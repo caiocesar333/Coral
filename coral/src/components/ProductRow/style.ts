@@ -42,9 +42,7 @@ export const P = styled.p`
 `;
 
 export const Banner = styled.img`
-    &:hover{
-        cursor: pointer;
-    }
+
 `
 
 export const Img = styled.img`
