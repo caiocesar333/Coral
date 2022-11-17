@@ -1,6 +1,7 @@
 import { Banner } from "../Banner/Banner"
 import { Hero } from "../Hero/Hero"
 import { Navbar } from "../Navbar/Navbar"
+import { NewArrival } from "../NewArrivals/NewArrivals"
 import {Container, } from "./style" 
 
 export function Layout(){
@@ -9,7 +10,8 @@ export function Layout(){
            <Navbar/>
            <Banner delay="We are currently experiencing local customs clearance
             delays. For the latest updates, please check your order status"/>
-            <Hero/>
+           <Hero/>
+           <NewArrival/>
         </Container>
     )
 }
