@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin-top: 50px;
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
 `;
 
 export const Tab = styled.div`
     margin-left: 50px;
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const ViewAll = styled.div`
@@ -25,7 +27,10 @@ export const ViewAll = styled.div`
 
 
 export const ProductsDiv = styled.div`
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 `;
 
 export const H2 = styled.h2`

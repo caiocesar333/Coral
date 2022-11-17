@@ -1,5 +1,6 @@
 import { Container, H2, P, ProductsDiv, Tab, ViewAll } from "./style";
 import Arrow from "../../assets/arrow2.svg"
+import {ProductList} from "../ProductList/ProductList";
 
 export function NewArrival() {
 
@@ -12,7 +13,9 @@ export function NewArrival() {
                     <img src={Arrow} alt="" />
                 </ViewAll>
             </Tab>
-            <ProductsDiv></ProductsDiv>
+            <ProductsDiv>
+                <ProductList/>
+            </ProductsDiv>
         </Container>
     )
 }
