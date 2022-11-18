@@ -16,6 +16,7 @@ export const P = styled.p`
   
   &:hover{
     cursor: pointer;
+    color: #FF8C4B; 
   }
 `
 

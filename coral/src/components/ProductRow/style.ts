@@ -36,7 +36,7 @@ export const H3 = styled.h4`
 export const P = styled.p`
     margin-top: 20px;
     margin-bottom: 0;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: #171520

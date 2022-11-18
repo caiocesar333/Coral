@@ -3,6 +3,7 @@ import { Handpicked } from "../Handpicked/Handpicked"
 import { Hero } from "../Hero/Hero"
 import { Navbar } from "../Navbar/Navbar"
 import { NewArrival } from "../NewArrivals/NewArrivals"
+import { ShopByBrands } from "../ShopByBrands/ShopByBrands"
 import {Container, } from "./style" 
 
 export function Layout(){
@@ -14,6 +15,7 @@ export function Layout(){
            <Hero title="Carry your Funk" description="Trendy handbags collection for your party animal"/>
            <NewArrival/>
            <Handpicked/>
+           <ShopByBrands></ShopByBrands>
         </Container>
     )
 }
