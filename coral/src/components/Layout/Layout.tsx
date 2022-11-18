@@ -11,7 +11,7 @@ export function Layout(){
            <Navbar/>
            <Banner delay="We are currently experiencing local customs clearance
             delays. For the latest updates, please check your order status"/>
-           <Hero/>
+           <Hero title="Carry your Funk" description="Trendy handbags collection for your party animal"/>
            <NewArrival/>
            <Handpicked/>
         </Container>
