@@ -5,6 +5,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  position: sticky;
 `
 
 export const Wrapper = styled.div`

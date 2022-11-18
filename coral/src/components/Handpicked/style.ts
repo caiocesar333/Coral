@@ -5,6 +5,7 @@ export const Container = styled.div`
     width: 100vw;
     background: #1B4B66;
     margin-top: 200px;
+    flex-direction: column;
 `;
 
 export const H1 = styled.h1`
