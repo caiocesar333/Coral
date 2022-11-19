@@ -1,27 +1,20 @@
-import { Button, Carry, Container, H1, H3, Img, P, Wrapper } from "./style";
-import HeroImg from "../../assets/hero.png"
-import Arrow from "../../assets/arrow.svg"
+import { Container, Wrapper, Img } from "./style";
+import {Carry} from "../../components/Carry/Carry"
 
 export interface HeroProps{
     children?: string
-    title: string,
-    description: string
+    title?: string,
+    description?: string,
+    image: string
 }
 
-export function Hero({title, description}: HeroProps) {
+export function Hero({title, description, image}: HeroProps) {
 
     return (
         <Container>
-            <Img src={HeroImg}></Img>
+            <Img src={image}></Img>
             <Wrapper>
-                <Carry>
-                    <H1>{title}</H1>
-                    <H3>{description}</H3>
-                    <Button>
-                        <img src={Arrow} alt="" />
-                        <P>See more</P>
-                    </Button>
-                </Carry>
+                <Carry title="Carry Your Funk" description="Trendy handbags collection for your party animal" ></Carry>
             </Wrapper>
         </Container>
     )
