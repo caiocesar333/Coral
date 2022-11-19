@@ -1,13 +1,17 @@
 import { Container, P } from "./style";
 
-export function NavCategory(){
+export interface NavCategoryProps{
+    active?: string
+}
+
+export function NavCategory({active}: NavCategoryProps){
     return(
         <Container>
-            <P>Handbags</P>
-            <P>Watches</P>
-            <P>Skincare</P>
-            <P>Jewellery</P>
-            <P>Apparels</P>
+            <P color={active}>Handbags</P>
+            <P color={active}>Watches</P>
+            <P color={active}>Skincare</P>
+            <P color={active}>Jewellery</P>
+            <P color={active}>Apparels</P>
         </Container>
     )
 }

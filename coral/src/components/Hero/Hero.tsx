@@ -5,16 +5,17 @@ export interface HeroProps{
     children?: string
     title?: string,
     description?: string,
-    image: string
+    image: string,
+    carry: boolean
 }
 
-export function Hero({title, description, image}: HeroProps) {
+export function Hero({title, description, image, carry}: HeroProps) {
 
     return (
         <Container>
             <Img src={image}></Img>
             <Wrapper>
-                <Carry title="Carry Your Funk" description="Trendy handbags collection for your party animal" ></Carry>
+                <Carry carry={carry} title={title} description={description} ></Carry>
             </Wrapper>
         </Container>
     )

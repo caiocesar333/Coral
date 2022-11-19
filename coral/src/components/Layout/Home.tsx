@@ -17,7 +17,7 @@ export function Home(){
            <Navbar/>
            <Banner delay="We are currently experiencing local customs clearance
             delays. For the latest updates, please check your order status"/>
-           <Hero image={HeroImg} title="Carry your Funk" description="Trendy handbags collection for your party animal"/>
+           <Hero carry={true} image={HeroImg} title="Carry your Funk" description="Trendy handbags collection for your party animal"/>
            <NewArrival/>
            <Handpicked/>
            <ShopByBrands/>

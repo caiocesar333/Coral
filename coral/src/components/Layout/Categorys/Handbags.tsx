@@ -7,7 +7,7 @@ export function Handbags(){
     return(
         <Container>
            <Navbar></Navbar> 
-           <Hero image={HeroImg}></Hero>
+           <Hero carry={false} image={HeroImg}></Hero>
         </Container>
     )
 }
