@@ -1,4 +1,5 @@
 import { Banner } from "../Banner/Banner"
+import { Footer } from "../Footer/Footer"
 import { Handpicked } from "../Handpicked/Handpicked"
 import { Hero } from "../Hero/Hero"
 import { Lifestyle } from "../Lifestyle/Lifestyle"
@@ -18,6 +19,7 @@ export function Layout(){
            <Handpicked/>
            <ShopByBrands/>
            <Lifestyle/>
+           <Footer/>
         </Container>
     )
 }

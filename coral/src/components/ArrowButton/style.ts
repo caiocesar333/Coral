@@ -7,7 +7,8 @@ export const Button = styled.div<ArrowButtonProps|any>`
     height: 51px;
     border-radius: 9999px;
     position: absolute;
-    margin-right: 30px;
+    margin-right: 50px;
+    margin-bottom: 15px;
     background: ${(props) =>props.bg};
     color: ${(props)=> props.color};
     &:hover{
