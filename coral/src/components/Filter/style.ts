@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin-left: 50px;
     width: 290px;
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
+    margin-top: 80px;
 `;
 
 export const P = styled.div`

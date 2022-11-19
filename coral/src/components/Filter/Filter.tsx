@@ -5,7 +5,7 @@ import { Container, H2, P } from "./style";
 export function Filter(){
     return(
         <Container>
-            <P>Home Handbag</P>
+            <P>Home - Handbag</P>
             <H2>Handbags</H2>
             <FilterOptions filter="Size"/>
             <FilterOptions filter="Color"/>
