@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     justify-content: space-evenly;
-    align-items: center
+    align-items: center;
+    
 `;
 
 export const Showing = styled.div`
@@ -40,6 +41,7 @@ export const SortBy = styled.div`
     width: 271px;
     padding: 0px;
     gap: 5px;
+    margin-right: 80px;
 `;
 
 export const Select = styled.select`
@@ -47,7 +49,7 @@ export const Select = styled.select`
     gap: 12px;
     background: #F1F1F1;
     border-radius: 4px;
-    width: 206px;
+    width: 216px;
     outline: none;
     border: none;
     option{
@@ -67,5 +69,5 @@ export const Input = styled.input`
     outline: none;
     border: none;
     width: 36px;
-    height: 32px;
+    height: 16px;
 `;
