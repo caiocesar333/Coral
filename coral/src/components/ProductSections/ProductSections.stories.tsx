@@ -1,7 +1,7 @@
 import { ProductSections } from "./ProductSections";
 
 export default {
-    title: "Components/ProductSections",
+    title: "Components/Product/ProductSections",
     component: ProductSections,
 } 
 

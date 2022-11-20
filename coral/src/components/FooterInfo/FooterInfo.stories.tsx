@@ -1,7 +1,7 @@
 import { FooterInfo } from "./FooterInfo";
 
 export default {
-    title: "Components/FooterInfo",
+    title: "Components/Footer/FooterInfo",
     component: FooterInfo,
 } 
 

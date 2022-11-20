@@ -2,7 +2,7 @@ import { Meta, StoryObj} from "@storybook/react"
 import { FilterOptions, FilterOptionsProps } from "./FilterOptions";
 
 export default {
-    title: 'Components/FilterOptions',
+    title: 'Components/Filter/FilterOptions',
     component: FilterOptions,
     args: {
         filter:""

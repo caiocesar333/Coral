@@ -1,7 +1,7 @@
 import { NavCategory } from "./NavCategory";
 
 export default {
-    title: 'Components/NavCategory',
+    title: 'Components/Navbar/NavCategory',
     component: NavCategory,
 }
 

@@ -1,7 +1,7 @@
 import { ProdShowcase } from "./ProdShowcase";
 
 export default {
-    title: "Components/ProdShowcase",
+    title: "Components/Product/ProdShowcase",
     component: ProdShowcase,
 } 
 

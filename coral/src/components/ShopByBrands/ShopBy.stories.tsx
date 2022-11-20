@@ -1,7 +1,7 @@
 import { ShopByBrands } from "./ShopByBrands";
 
 export default {
-    title: "Components/ShopByBrands",
+    title: "Components/Brands/ShopByBrands",
     component: ShopByBrands,
 } 
 

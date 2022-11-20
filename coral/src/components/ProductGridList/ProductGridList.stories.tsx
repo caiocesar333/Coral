@@ -1,7 +1,7 @@
 import { ProductGridList } from "./ProductGridList";
 
 export default {
-    title: "Components/ProductGridList",
+    title: "Components/Product/ProductGridList",
     component: ProductGridList,
 } 
 

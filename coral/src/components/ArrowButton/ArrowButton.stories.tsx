@@ -3,7 +3,7 @@ import { ArrowButton, ArrowButtonProps } from "./ArrowButton";
 
 
 export default {
-    title: "Components/ArrowButton",
+    title: "Components/SkinFace/ArrowButton",
     component: ArrowButton,
     args: {
         children: "",
