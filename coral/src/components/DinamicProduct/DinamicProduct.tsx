@@ -1,16 +1,17 @@
 
-import { Container } from "../Banner/style";
+import { Img, P, Container } from "./style";
 
 export interface DinamicProductProps{
     children?:string,
-    productname: string,
-    imgUrl:string
+    productname: string | undefined,
+    imgUrl:string | undefined,
 }
 
-export function DinamicProduct(){
+export function DinamicProduct({productname,imgUrl}:DinamicProductProps){
     return(
         <Container>
-
+            <Img src={require('../../assets/products/'+imgUrl+'.png')}></Img>
+            <P>{productname}</P>
         </Container>
     )
 }

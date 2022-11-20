@@ -7,13 +7,13 @@ import { Container } from "../style";
 
 export function ProductPage(){
     
-    const {productName} = useParams();
+    const {productName, imgUrl} = useParams();
     
     return(
         <Container>
             <Navbar></Navbar>
             <Label productName={productName} ></Label>
-            <DinamicProduct></DinamicProduct>
+            <DinamicProduct productname={productName} imgUrl ={imgUrl} ></DinamicProduct>
         </Container>
     )
 }

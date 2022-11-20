@@ -12,8 +12,8 @@ export const Container = styled.div`
 
 export const P = styled.p`
     font-weight: 500;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 10px;
     color: #1B4B66;
     &::first-letter{
         text-transform: uppercase;
