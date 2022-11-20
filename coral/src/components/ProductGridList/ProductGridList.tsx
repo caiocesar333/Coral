@@ -1,10 +1,10 @@
-import { ProductRow } from "../ProductRow/ProductRow";
 import { Container } from "./style";
 
 import image from "../../assets/products/image.png"
 import image1 from "../../assets/products/image1.png"
 import image2 from "../../assets/products/image2.png"
 import image3 from "../../assets/products/image3.png"
+import { ProductGrid } from "../ProductGrid/ProductGrid";
 
 
 export function ProductGridList() {
@@ -50,8 +50,8 @@ export function ProductGridList() {
     return (
         <Container>
             {produtos.map((produto, index) => (
-                <ProductRow image={produto.image} name={produto.name}
-                    description={produto.description} price={produto.price}></ProductRow>
+                <ProductGrid image={produto.image} name={produto.name}
+                    description={produto.description} price={produto.price}></ProductGrid>
             ))}
         </Container>
     )
