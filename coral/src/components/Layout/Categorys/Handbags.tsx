@@ -4,6 +4,7 @@ import { Container, Wrapper } from "../style";
 import HeroImg from "../../../assets/heroBag.png"
 import GlobalStyle from "../../../styles/global";
 import { Showcase } from "../../Showcase/Showcase";
+import { Footer } from "../../Footer/Footer";
 
 
 export function Handbags() {
@@ -15,6 +16,7 @@ export function Handbags() {
                 <Hero carry={false} image={HeroImg} />
             </Wrapper>
             <Showcase />
+            <Footer/>
         </Container>
     )
 }
