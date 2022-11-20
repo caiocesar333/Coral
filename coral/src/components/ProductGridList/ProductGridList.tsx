@@ -1,25 +1,14 @@
-import { useEffect, useState, useRef } from "react";
-
 import { ProductRow } from "../ProductRow/ProductRow";
 import { Container } from "./style";
+
 import image from "../../assets/products/image.png"
 import image1 from "../../assets/products/image1.png"
 import image2 from "../../assets/products/image2.png"
 import image3 from "../../assets/products/image3.png"
 
-import { motion } from "framer-motion";
 
-export function ProductList() {
+export function ProductGridList() {
     
-    const carousel = useRef() as React.MutableRefObject<HTMLInputElement>;
-    const [width, setWidth] = useState(0)
-
-   useEffect(()=>{
-     console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth)
-     setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
-   }, [])
-
-
     const produtos = [{
         image: image,
         name: "Grande",
@@ -59,12 +48,7 @@ export function ProductList() {
     ]
 
     return (
-        <Container 
-         ref={carousel}
-         as={motion.div}
-         whileTap={{cursor: "grabbing"}} 
-         drag="x"
-         dragConstraints={{right: 0, left:-width}}>
+        <Container>
             {produtos.map((produto, index) => (
                 <ProductRow image={produto.image} name={produto.name}
                     description={produto.description} price={produto.price}></ProductRow>

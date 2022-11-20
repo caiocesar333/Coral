@@ -1,6 +1,6 @@
 import { Container, H2, P, ProductsDiv, Tab, ViewAll } from "./style";
 import Arrow from "../../assets/arrow2.svg"
-import {ProductList} from "../ProductList/ProductList";
+import {ProductRowList} from "../ProductRowList/ProductRowList";
 
 export function NewArrival() {
 
@@ -14,7 +14,7 @@ export function NewArrival() {
                 </ViewAll>
             </Tab>
             <ProductsDiv>
-                <ProductList/>
+                <ProductRowList/>
             </ProductsDiv>
         </Container>
     )

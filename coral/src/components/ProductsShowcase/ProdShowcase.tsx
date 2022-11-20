@@ -1,5 +1,5 @@
 import { ListingOptions } from "../ListingOptions/ListingOptions";
-import { ProductGrid } from "../ProductGrid/ProductGrid";
+import { ProductGridList } from "../ProductGridList/ProductGridList";
 import { Container } from "./style";
 
 
@@ -7,7 +7,7 @@ export function ProdShowcase(){
     return(
         <Container>
             <ListingOptions/>
-            <ProductGrid></ProductGrid>
+            <ProductGridList/>
         </Container>
     )
 }
