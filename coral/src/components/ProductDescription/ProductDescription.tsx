@@ -1,8 +1,10 @@
+import { AddBagButton } from "../Buttons/AddBagButton/AddBagButton";
+import { AddWishButton } from "../Buttons/AddWishButton/AddWishButton";
 import { DeliveryDetails } from "../DeliveryDetails/DeliveryDetails";
 import { DinamicPrice } from "../DinamicPrice/DinamicPrice";
 import { Star } from "../Icons/Stars";
 import { Offers } from "../Offers/Offers";
-import { Rating, Rate, OffersDiv } from "./style";
+import { Rating, Rate, OffersDiv, ButtonsDiv } from "./style";
 import { Container, Description, H3, Wrapper } from "./style";
 
 
@@ -24,10 +26,14 @@ export function ProductDescription({ productName }: ProductDescriptionProps) {
                 </Rating>
                 <DinamicPrice price="$54.69" oldPrice="$78.66" discount="50%OFF" />
             </Wrapper>
-                <DeliveryDetails/>
-                <OffersDiv>
-                    <Offers/>
-                </OffersDiv>
+            <DeliveryDetails />
+            <OffersDiv>
+                <Offers />
+            </OffersDiv>
+            <ButtonsDiv>
+                <AddBagButton />
+                <AddWishButton/>
+            </ButtonsDiv>
         </Container>
     )
 }

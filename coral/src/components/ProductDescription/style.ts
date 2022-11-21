@@ -48,4 +48,15 @@ export const OffersDiv = styled.div`
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-top: 20px;
+`
+
+export const ButtonsDiv = styled.div`
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
 `
