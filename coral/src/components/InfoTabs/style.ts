@@ -26,7 +26,9 @@ export const STab = styled(Tab)`
     padding: 6px 18px;
     gap: 10px;
     border-radius: 8px;
-    color: black;
+    &:hover{
+        cursor: pointer;
+    }
 `
 
 
