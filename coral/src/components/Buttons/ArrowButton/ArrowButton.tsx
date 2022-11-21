@@ -1,5 +1,5 @@
 import { Button, Img } from "./style";
-import arrowButton from "../../assets/arrowB.svg"
+import arrowButton from "../../../assets/arrowB.svg"
 
 export interface ArrowButtonProps{
     children?: string,

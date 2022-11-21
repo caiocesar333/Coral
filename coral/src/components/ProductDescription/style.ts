@@ -31,7 +31,6 @@ export const H3 = styled.h3`
     }
 `
 
-
 export const Description = styled.p`
     font-weight: 600;
     font-size: 20px;
@@ -43,4 +42,10 @@ export const Rate = styled.p`
     font-size: 16px;
     line-height: 20px;
     color: #B6B6B6;
+`
+
+export const OffersDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 `

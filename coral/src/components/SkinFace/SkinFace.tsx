@@ -1,7 +1,7 @@
 import { Container, Face, Img, Skin } from "./style";
 import skin from "../../assets/actionBanners/skin.png"
 import face from "../../assets/actionBanners/face.png"
-import { ArrowButton } from "../ArrowButton/ArrowButton";
+import { ArrowButton } from "../Buttons/ArrowButton/ArrowButton";
 
 
 

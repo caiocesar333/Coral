@@ -1,7 +1,8 @@
 import { DeliveryDetails } from "../DeliveryDetails/DeliveryDetails";
 import { DinamicPrice } from "../DinamicPrice/DinamicPrice";
 import { Star } from "../Icons/Stars";
-import { Rating, Rate } from "./style";
+import { Offers } from "../Offers/Offers";
+import { Rating, Rate, OffersDiv } from "./style";
 import { Container, Description, H3, Wrapper } from "./style";
 
 
@@ -24,6 +25,9 @@ export function ProductDescription({ productName }: ProductDescriptionProps) {
                 <DinamicPrice price="$54.69" oldPrice="$78.66" discount="50%OFF" />
             </Wrapper>
                 <DeliveryDetails/>
+                <OffersDiv>
+                    <Offers/>
+                </OffersDiv>
         </Container>
     )
 }
