@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 80vw;
     height: 24px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 80px;
 `;
 
 export const P = styled.p`
@@ -15,8 +15,12 @@ export const P = styled.p`
     font-size: 14px;
     line-height: 10px;
     color: #1B4B66;
+    margin: 5px;
     &::first-letter{
         text-transform: uppercase;
     }
-    margin: 5px
+    &:hover{
+        font-weight: 600;
+        cursor: pointer;
+    }
 `

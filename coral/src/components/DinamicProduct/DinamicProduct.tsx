@@ -4,15 +4,15 @@ import { Img, Container } from "./style";
 
 export interface DinamicProductProps{
     children?:string,
-    productname: string | undefined,
+    productName: string | undefined,
     imgUrl:string | undefined,
 }
 
-export function DinamicProduct({productname,imgUrl}:DinamicProductProps){
+export function DinamicProduct({productName,imgUrl}:DinamicProductProps){
     return(
         <Container>
             <Img src={require('../../assets/products/'+imgUrl+'.png')}></Img>
-            <ProductDescription productName={productname}/>
+            <ProductDescription productName={productName}/>
         </Container>
     )
 }

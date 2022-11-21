@@ -13,7 +13,7 @@ export function ProductPage(){
         <Container>
             <Navbar></Navbar>
             <Label productName={productName} ></Label>
-            <DinamicProduct productname={productName} imgUrl ={imgUrl} ></DinamicProduct>
+            <DinamicProduct productName={productName} imgUrl ={imgUrl} ></DinamicProduct>
         </Container>
     )
 }
