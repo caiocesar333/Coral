@@ -1,5 +1,6 @@
 
 import { Fragment } from "react";
+import { Footer } from "../Footer/Footer";
 import { InfoTabs } from "../InfoTabs/InfoTabs";
 import { ProductDescription } from "../ProductDescription/ProductDescription";
 import { Img, Container } from "./style";
@@ -18,6 +19,7 @@ export function DinamicProduct({productName,imgUrl}:DinamicProductProps){
             <ProductDescription productName={productName}/>
         </Container>
         <InfoTabs/>
+        <Footer/>
         </Fragment>
     )
 }

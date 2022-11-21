@@ -7,3 +7,14 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+
+.active{
+    color: #fff;
+    background: #1B4B66;
+    outline: none;
+    border:none;
+}
+
+.active:focus{
+    color:white
+}
