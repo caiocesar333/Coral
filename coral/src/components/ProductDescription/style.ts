@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    width: 35%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -8,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.12); */
 `;
 
 
