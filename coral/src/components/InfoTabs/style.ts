@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 
 export const Container = styled.div`
-    width: 100%;
+    width: 79%;
     margin-top: 150px;
 `;
 
