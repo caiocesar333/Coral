@@ -1,4 +1,6 @@
 
+import { Fragment } from "react";
+import { InfoTabs } from "../InfoTabs/InfoTabs";
 import { ProductDescription } from "../ProductDescription/ProductDescription";
 import { Img, Container } from "./style";
 
@@ -10,9 +12,12 @@ export interface DinamicProductProps{
 
 export function DinamicProduct({productName,imgUrl}:DinamicProductProps){
     return(
-        <Container>
+        <Fragment>
+            <Container>
             <Img src={require('../../assets/products/'+imgUrl+'.png')}></Img>
             <ProductDescription productName={productName}/>
         </Container>
+        <InfoTabs/>
+        </Fragment>
     )
 }
