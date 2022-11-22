@@ -2,23 +2,27 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-    width: 378px;
+    width: 100%;
     display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    
 `;
 
 export const TextDiv = styled.div`
-    width: 200px;
+    /* width: 200px; */
     display: flex;
     flex-flow: column;
+    justify-content: flex-start;
 `;
 
 export const PriceDiv = styled.div`
     display: flex;
     flex-flow: column;
+    margin-bottom: 35px;
+    align-items: flex-end;
 `;
 
 
@@ -31,10 +35,12 @@ export const P = styled.p`
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    margin: 5px;
+    margin: 0px;
     color: #626262;
+    margin-bottom: 5px;
     &:first-child{
         color: black;
+        font-weight: 500;
     }
 `
 

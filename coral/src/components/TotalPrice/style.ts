@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 `;
 
 export const Type = styled.div`
@@ -16,6 +17,7 @@ export const Price = styled.div`
     width: 50%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 `;
 
 export const P = styled.p`
@@ -23,4 +25,5 @@ export const P = styled.p`
     font-size: 14px;
     line-height: 20px;
     color: #171520;
+    margin: 5px;
 `;
