@@ -1,14 +1,9 @@
-import { Check, Container, Details, Img, Input, P, Pincode, PincodeCheck, QuantityDiv, QuantityHandle, Wrapper } from "./style";
-import minus from "../../assets/minus.svg"
-import plus from "../../assets/plus.svg"
-import { useState } from "react";
+import { Check, Container, Details, Img, Input, P, Pincode, PincodeCheck, QuantityDiv, Wrapper } from "./style";
+
+import { QuantityHandle } from "../QuantityHandle/QuantityHandle";
 
 export function DeliveryDetails() {
 
-    const [count, setCount] = useState(0);
-    const incrementCount = () => {
-        setCount(count + 1);
-      };
 
     return (
         <Container>
@@ -17,11 +12,7 @@ export function DeliveryDetails() {
                 <Check>Check estimated delivery date/pickup option.</Check>
                 <QuantityDiv>
                     <Details>Quantity:</Details>
-                    <QuantityHandle>
-                        <Img src={minus}></Img>
-                        <P>{count}</P>
-                        <Img onClick={incrementCount} src={plus}></Img>
-                    </QuantityHandle>
+                    <QuantityHandle/>
                 </QuantityDiv>
             </Wrapper>
             <Pincode>

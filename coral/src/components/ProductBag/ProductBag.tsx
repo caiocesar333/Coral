@@ -1,7 +1,7 @@
 import { Container, Cross, Img, P, PriceDiv, PriceTag, TextDiv } from "./style";
 import product from "../../assets/products/image.png"
-import { QuantityHandle } from "../DeliveryDetails/style";
 import crossSmall from "../../assets/crossSmall.svg"
+import { QuantityHandle } from "../QuantityHandle/QuantityHandle";
 
 export function ProductBag() {
 
