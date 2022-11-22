@@ -6,23 +6,31 @@ import { Lifestyle } from "../Lifestyle/Lifestyle"
 import { Navbar } from "../Navbar/Navbar"
 import { NewArrival } from "../NewArrivals/NewArrivals"
 import { ShopByBrands } from "../ShopByBrands/ShopByBrands"
-import {Container, } from "./style" 
+import { Container, } from "./style"
 import GlobalStyle from '../../styles/global';
 import HeroImg from "../../assets/hero.png"
+import MediaQuery from "react-responsive"
+import { NavbarMobile } from "../../mobile/Navbar/NavbarMobile"
 
-export function Home(){
-    return(
-        <Container>
-           <GlobalStyle />
-           <Navbar/>
-           <Banner delay="We are currently experiencing local customs clearance
+export function Home() {
+    return (<>
+        <MediaQuery minWidth={1200}>
+            <Container>
+                <GlobalStyle />
+                <Navbar />
+                <Banner delay="We are currently experiencing local customs clearance
             delays. For the latest updates, please check your order status"/>
-           <Hero carry={true} image={HeroImg} title="Carry your Funk" description="Trendy handbags collection for your party animal"/>
-           <NewArrival/>
-           <Handpicked/>
-           <ShopByBrands/>
-           <Lifestyle/>
-           <Footer/>
-        </Container>
+                <Hero carry={true} image={HeroImg} title="Carry your Funk" description="Trendy handbags collection for your party animal" />
+                <NewArrival />
+                <Handpicked />
+                <ShopByBrands />
+                <Lifestyle />
+                <Footer />
+            </Container>
+        </MediaQuery>
+        <MediaQuery maxWidth={500}>
+            <NavbarMobile/>
+        </MediaQuery>
+        </>
     )
 }
