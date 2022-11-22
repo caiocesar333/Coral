@@ -1,6 +1,7 @@
-import { Check, Container, Details, Img, Input, P, Pincode, PincodeCheck, QuantityDiv, Wrapper } from "./style";
+import { Check, Container, Details, QuantityDiv, Wrapper } from "./style";
 
 import { QuantityHandle } from "../QuantityHandle/QuantityHandle";
+import { Pincode } from "../Pincode/Pincode";
 
 export function DeliveryDetails() {
 
@@ -15,10 +16,7 @@ export function DeliveryDetails() {
                     <QuantityHandle/>
                 </QuantityDiv>
             </Wrapper>
-            <Pincode>
-                <Input placeholder="Apply Valid Pincode"></Input>
-                <PincodeCheck>CHECK</PincodeCheck>
-            </Pincode>
+            <Pincode placeholder="Valid Pincode"/>
         </Container>
     )
 }

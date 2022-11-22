@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: flex;
     align-items: flex-start;
     border-top: 1px solid rgba(0, 0, 0, 0.12);
+    gap: 8px;
 `;
 
 export const Details = styled.p`

@@ -1,7 +1,8 @@
 import { PlaceOrder } from "../Buttons/PlaceOrder/PlaceOrder";
-import { Pincode } from "../DeliveryDetails/style";
+import { Pincode } from "../Pincode/Pincode";
 import { ProductBag } from "../ProductBag/ProductBag";
 import { Back } from "../TextComponents/Back";
+import { ContinueShopp } from "../TextComponents/ContinueShopp/ContinueShopp";
 import { TotalPrice } from "../TotalPrice/TotalPrice";
 import { Background, Container } from "./style";
 
@@ -19,9 +20,9 @@ export function Modal({ showModal, setShowModal }: ModalProps) {
                         <Back showModal={showModal} setShowModal={setShowModal}></Back>
                         <ProductBag></ProductBag>
                         <TotalPrice></TotalPrice>
-                        {/* <Pincode></Pincode> */}
+                        <Pincode placeholder="Coupon Code"></Pincode>
                         <PlaceOrder></PlaceOrder>
-                        {/* <ContinueShopp></ContinueShopp> */}
+                        <ContinueShopp></ContinueShopp>
                     </Container>
                 </Background>
                 : null}

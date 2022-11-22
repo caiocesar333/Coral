@@ -1,4 +1,4 @@
-import { useState } from "react"
+import {useState} from "react"
 import BagIcon from "../../assets/bag.svg"
 import { Modal } from "../Modal/Modal"
 import { Img } from "./style"
