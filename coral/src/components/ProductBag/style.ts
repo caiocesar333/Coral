@@ -8,7 +8,8 @@ export const Container = styled.div`
     align-items: flex-start;
     gap: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-    
+    margin-top: 20px;
+    z-index: 1000;
 `;
 
 export const TextDiv = styled.div`
