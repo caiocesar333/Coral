@@ -9,6 +9,7 @@ export const Container = styled.div`
   position: fixed;
   background: white;
   z-index: 100;
+  left: 0;
   top: 0;
 `
 

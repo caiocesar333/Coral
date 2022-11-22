@@ -4,12 +4,18 @@ export interface SectionsProps{
     children?: string,
     image: string,
     title:string,
+    url:string
 }
 
-export function Sections({image,title}:SectionsProps ){
+export function Sections({image,title,url}:SectionsProps ){
+
+    const redirect = ()=>{
+        window.location.href = url
+    }
+
     return(
         <Container>
-            <Img src={image} alt="" />
+            <Img onClick={redirect} src={image} alt="" />
             <H3>{title}</H3>
         </Container>
     )

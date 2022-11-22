@@ -5,9 +5,13 @@ export interface NavCategoryProps{
 }
 
 export function NavCategory({active}: NavCategoryProps){
+    const redirect = ()=>{
+        window.location.href = "/handbags"
+    }
+    
     return(
         <Container>
-            <P color={active}>Handbags</P>
+            <P onClick={redirect} color={active}>Handbags</P>
             <P color={active}>Watches</P>
             <P color={active}>Skincare</P>
             <P color={active}>Jewellery</P>

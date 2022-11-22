@@ -6,7 +6,7 @@ export interface PincodeProps{
 
 export function Pincode({placeholder}:PincodeProps) {
 
-    const text = "Apply" +" "+ placeholder
+    const text = `Apply ${placeholder}`
     
     return (
         <Container>

@@ -29,10 +29,6 @@ export function Modal({ showModal, setShowModal }: ModalProps) {
         }
     }
 
-
-
-
-
     return (
         <>
             {showModal ?

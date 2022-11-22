@@ -2,7 +2,12 @@ import { P } from "./style";
 
 
 export function ContinueShopp(){
+
+    const redirect = ()=>{
+        window.location.href = "/handbags"
+    }
+
     return(
-        <P>Continue Shopping</P>
+        <P onClick={redirect}>Continue Shopping</P>
     )
 }

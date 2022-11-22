@@ -12,12 +12,13 @@ export interface ProductSectionsProps{
 
 
 export function ProductSections(){
+
     return(
         <Container>
-            <Sections image={personal} title = "Personal Care"/>
-            <Sections image={handbag} title = "Handbags"/>
-            <Sections image={watches} title = "Wrist Watches"/>
-            <Sections image={glasses} title = "Sun Glasses"/>
+            <Sections url="/personal" image={personal} title = "Personal Care"/>
+            <Sections url="/handbags" image={handbag} title = "Handbags"/>
+            <Sections url="/watches" image={watches} title = "Wrist Watches"/>
+            <Sections url="/glasses" image={glasses} title = "Sun Glasses"/>
         </Container>
     )
 }
