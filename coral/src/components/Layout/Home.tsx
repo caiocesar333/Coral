@@ -21,6 +21,7 @@ import { AddShortCut } from "../../mobile/AddShortCut/AddShortCut"
 import { LifestyleMobile } from "../../mobile/LifestyleMobile/LifestyleMobile"
 import funk from "../../assets/Mobile/Banners/funk.svg"
 import spring from "../../assets/Mobile/Banners/spring.png"
+import { DropDownFooter } from "../../mobile/DropDownFooter/DropDownFooter"
 
 export function Home() {
     return (<>
@@ -54,6 +55,7 @@ export function Home() {
                 <LifestyleMobile/>
                 <LabelMobile title="Trending Deals" viewAll={false}/>
                 <BannerMobile img={spring}/>
+                <DropDownFooter/>
             </MobileContainer>
         </MediaQuery>
     </>
