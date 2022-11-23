@@ -56,6 +56,7 @@ export function Home() {
                 <LabelMobile title="Trending Deals" viewAll={false}/>
                 <BannerMobile img={spring}/>
                 <DropDownFooter/>
+                
             </MobileContainer>
         </MediaQuery>
     </>

@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 `;
 export const TextDiv = styled.div`
     display: flex;
@@ -18,6 +19,7 @@ export const P = styled.p`
     font-size: 14px;
     line-height: 18px;
     color: #626262;
+    margin-left: 20px;
 `;
 
 export const img = styled.img`

@@ -1,5 +1,4 @@
-import { LocationDiv } from "../../components/FooterInfo/styled";
-import { Media } from "../../components/Media/Media";
+import { MediaMobile } from "../MediaMobile/MediaMobile";
 import { Container, P, TextDiv, Wrapper } from "./style";
 
 
@@ -27,6 +26,7 @@ export function FooterMobile() {
                     <P>Contact Us | About Us | Careers | Press </P>
                 </TextDiv>
             </Wrapper>
+            <MediaMobile/>
         </Container>
     )
 }
