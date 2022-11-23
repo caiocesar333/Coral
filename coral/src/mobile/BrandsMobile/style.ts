@@ -6,6 +6,7 @@ export const Container = styled.div`
     flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 20px;
 `;
 
 export const Img = styled.img`

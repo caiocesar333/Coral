@@ -19,6 +19,8 @@ import { HandpickedMobile } from "../../mobile/HandpickedMobile/HandpickedMobile
 import { BrandsMobile } from "../../mobile/BrandsMobile/BrandsMobile"
 import { AddShortCut } from "../../mobile/AddShortCut/AddShortCut"
 import { LifestyleMobile } from "../../mobile/LifestyleMobile/LifestyleMobile"
+import funk from "../../assets/Mobile/Banners/funk.svg"
+import spring from "../../assets/Mobile/Banners/spring.png"
 
 export function Home() {
     return (<>
@@ -39,7 +41,7 @@ export function Home() {
         <MediaQuery maxWidth={500}>
             <MobileContainer>
                 <NavbarMobile />
-                <BannerMobile />
+                <BannerMobile img={funk} />
                 <LabelMobile title="Top Categories" viewAll={false}/>
                 <TopCategories />
                 <LabelMobile title="New Arrivals" viewAll={true}/>
@@ -50,6 +52,8 @@ export function Home() {
                 <AddShortCut/>
                 <LabelMobile title="Makeup & Skincare" viewAll={false}/>
                 <LifestyleMobile/>
+                <LabelMobile title="Trending Deals" viewAll={false}/>
+                <BannerMobile img={spring}/>
             </MobileContainer>
         </MediaQuery>
     </>

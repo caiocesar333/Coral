@@ -1,8 +1,11 @@
 import { Img } from "./style";
-import banner from "../../assets/Mobile/Banners/funk.svg"
 
-export function BannerMobile(){
+export interface BannerMobileProps{
+    img:string
+}
+
+export function BannerMobile({img}:BannerMobileProps){
     return(
-        <Img src={banner}></Img>
+        <Img src={img}></Img>
     )
 }
