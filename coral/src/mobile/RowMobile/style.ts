@@ -4,7 +4,6 @@ export const Container = styled.div`
     /* width: 135px; */
     margin-left: 20px;
     cursor: grab;
-    margin-top: 25px;
 `;
 export const Wrapper = styled.div`
     display: flex;
