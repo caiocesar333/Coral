@@ -18,6 +18,7 @@ import { LabelMobile } from "../../mobile/LabelMobile/LabelMobile"
 import { HandpickedMobile } from "../../mobile/HandpickedMobile/HandpickedMobile"
 import { BrandsMobile } from "../../mobile/BrandsMobile/BrandsMobile"
 import { AddShortCut } from "../../mobile/AddShortCut/AddShortCut"
+import { LifestyleMobile } from "../../mobile/LifestyleMobile/LifestyleMobile"
 
 export function Home() {
     return (<>
@@ -47,6 +48,8 @@ export function Home() {
                 <LabelMobile title="Shop By Brands" viewAll={true}/>
                 <BrandsMobile/>
                 <AddShortCut/>
+                <LabelMobile title="Makeup & Skincare" viewAll={false}/>
+                <LifestyleMobile/>
             </MobileContainer>
         </MediaQuery>
     </>
