@@ -14,6 +14,7 @@ import { NavbarMobile } from "../../mobile/Navbar/NavbarMobile"
 import { BannerMobile } from "../../mobile/Banner/BannerMobile"
 import { TopCategories } from "../../mobile/TopCategories/TopCategories"
 import { RowListMobile } from "../../mobile/RowListMobile/RowListMobile"
+import { LabelMobile } from "../../mobile/LabelMobile/LabelMobile"
 
 export function Home() {
     return (<>
@@ -35,8 +36,10 @@ export function Home() {
             <MobileContainer>
                 <NavbarMobile />
                 <BannerMobile />
+                <LabelMobile title="Top Categories" viewAll={false}/>
                 <TopCategories />
                 <RowListMobile/>
+                <LabelMobile title="New Arrivals" viewAll={true}/>
             </MobileContainer>
         </MediaQuery>
     </>
