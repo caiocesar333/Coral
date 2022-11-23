@@ -8,6 +8,16 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+export const MobileContainer = styled.div`
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
 export const Wrapper = styled.div`
   margin-top: 80px;
+`
+export const FlexDiv = styled.div`
+  display: flex;
 `

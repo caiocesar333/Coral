@@ -6,11 +6,14 @@ import { Lifestyle } from "../Lifestyle/Lifestyle"
 import { Navbar } from "../Navbar/Navbar"
 import { NewArrival } from "../NewArrivals/NewArrivals"
 import { ShopByBrands } from "../ShopByBrands/ShopByBrands"
-import { Container, } from "./style"
+import { Container, FlexDiv, MobileContainer } from "./style"
 import GlobalStyle from '../../styles/global';
 import HeroImg from "../../assets/hero.png"
 import MediaQuery from "react-responsive"
 import { NavbarMobile } from "../../mobile/Navbar/NavbarMobile"
+import { BannerMobile } from "../../mobile/Banner/BannerMobile"
+import { TopCategories } from "../../mobile/TopCategories/TopCategories"
+import { ProductRowList } from "../ProductRowList/ProductRowList"
 
 export function Home() {
     return (<>
@@ -29,8 +32,12 @@ export function Home() {
             </Container>
         </MediaQuery>
         <MediaQuery maxWidth={500}>
-            <NavbarMobile/>
+            <MobileContainer>
+                <NavbarMobile />
+                <BannerMobile />
+                <TopCategories />
+            </MobileContainer>
         </MediaQuery>
-        </>
+    </>
     )
 }
