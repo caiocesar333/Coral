@@ -16,6 +16,8 @@ import { TopCategories } from "../../mobile/TopCategories/TopCategories"
 import { RowListMobile } from "../../mobile/RowListMobile/RowListMobile"
 import { LabelMobile } from "../../mobile/LabelMobile/LabelMobile"
 import { HandpickedMobile } from "../../mobile/HandpickedMobile/HandpickedMobile"
+import { BrandsMobile } from "../../mobile/BrandsMobile/BrandsMobile"
+import { AddShortCut } from "../../mobile/AddShortCut/AddShortCut"
 
 export function Home() {
     return (<>
@@ -43,6 +45,8 @@ export function Home() {
                 <RowListMobile/>
                 <HandpickedMobile/>
                 <LabelMobile title="Shop By Brands" viewAll={true}/>
+                <BrandsMobile/>
+                <AddShortCut/>
             </MobileContainer>
         </MediaQuery>
     </>
