@@ -6,6 +6,7 @@ export const Container = styled.div`
     margin-left: 20px;
     flex-direction: column;
     color: #B6B6B6;
+    margin-bottom: 20px;
 `;
 
 export const Wrapper = styled.div`
