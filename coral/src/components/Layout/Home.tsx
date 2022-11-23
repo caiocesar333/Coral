@@ -10,7 +10,7 @@ import { Container, MobileContainer } from "./style"
 import GlobalStyle from '../../styles/global';
 import HeroImg from "../../assets/hero.png"
 import MediaQuery from "react-responsive"
-import { NavbarMobile } from "../../mobile/Navbar/NavbarMobile"
+import { NavbarMobile } from "../../mobile/NavbarMobile/NavbarMobile"
 import { BannerMobile } from "../../mobile/Banner/BannerMobile"
 import { TopCategories } from "../../mobile/TopCategories/TopCategories"
 import { RowListMobile } from "../../mobile/RowListMobile/RowListMobile"
@@ -22,6 +22,7 @@ import { LifestyleMobile } from "../../mobile/LifestyleMobile/LifestyleMobile"
 import funk from "../../assets/Mobile/Banners/funk.svg"
 import spring from "../../assets/Mobile/Banners/spring.png"
 import { DropDownFooter } from "../../mobile/DropDownFooter/DropDownFooter"
+import { NavFixed } from "../../mobile/NavFixed/NavFixed"
 
 export function Home() {
     return (<>
@@ -56,7 +57,7 @@ export function Home() {
                 <LabelMobile title="Trending Deals" viewAll={false}/>
                 <BannerMobile img={spring}/>
                 <DropDownFooter/>
-                
+                <NavFixed/>
             </MobileContainer>
         </MediaQuery>
     </>

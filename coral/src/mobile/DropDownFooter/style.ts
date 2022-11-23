@@ -5,6 +5,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin-bottom: 56px;
 `;
 export const TextDiv = styled.div`
     display: flex;
