@@ -1,6 +1,6 @@
 import { Hero } from "../../Hero/Hero";
 import { Navbar } from "../../Navbar/Navbar";
-import { Container, Wrapper } from "../style";
+import { Container, MobileContainer, Wrapper } from "../style";
 import HeroImg from "../../../assets/heroBag.png"
 import GlobalStyle from "../../../styles/global";
 import { Showcase } from "../../Showcase/Showcase";
@@ -24,9 +24,11 @@ export function Handbags() {
             </Container>
         </MediaQuery>
         <MediaQuery maxWidth={500}>
-            <CategoryLabel/>
-            <FilteringLabel/>
+            <MobileContainer>
+                <CategoryLabel />
+                <FilteringLabel />
+            </MobileContainer>
         </MediaQuery>
-        </>
-        )
+    </>
+    )
 }

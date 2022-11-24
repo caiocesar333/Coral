@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
 
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 89vw;
     background: white;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
