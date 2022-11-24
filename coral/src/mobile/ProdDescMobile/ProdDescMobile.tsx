@@ -2,14 +2,15 @@
 import { useState } from "react";
 import { Img } from "../Icons/style";
 import { Container, P, TextDiv } from "./style";
-import arrow from "../../assets/Mobile/arrowDrop.svg"
+import arrowDrop from "../../assets/Mobile/arrowDrop.svg"
 import arrowUp from "../../assets/Mobile/arrowUp.svg"
 
 export interface ProdDescMobileProps{
-    title:string
+    title:string,
+    arrow:boolean
 }
 
-export function ProdDescMobile({title}:ProdDescMobileProps) {
+export function ProdDescMobile({title, arrow}:ProdDescMobileProps) {
 
     const [open, setOpen] = useState(false);
 
@@ -21,7 +22,10 @@ export function ProdDescMobile({title}:ProdDescMobileProps) {
         <Container onClick={handleOpen}>
             <TextDiv>
                 <P>{title}</P>
-                <Img src={open ? arrow : arrowUp} />
+                {arrow
+                    ? <Img src={open ? arrowDrop : arrowUp} />
+                    : <></>
+                }
             </TextDiv>
             {open
                 ? <P>Product Description

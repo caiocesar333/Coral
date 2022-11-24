@@ -6,6 +6,7 @@ import { Container } from "./style";
 import image from "../../assets/Mobile/Products/image.svg"
 import image1 from "../../assets/Mobile/Products/image1.svg"
 import image2 from "../../assets/Mobile/Products/image2.svg"
+import image3 from "../../assets/Mobile/Products/image3.svg"
 import { motion } from "framer-motion";
 
 export function RowListMobile(){
@@ -35,6 +36,12 @@ export function RowListMobile(){
         image: image2,
         name: "Remus",
         description: "Brown Strap Bag",
+        price: "$57.00"
+    },
+    {
+        image: image,
+        name: "Coach",
+        description: "Leather Coach Bag",
         price: "$57.00"
     },
     ]

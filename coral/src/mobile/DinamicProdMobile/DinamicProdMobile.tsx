@@ -6,6 +6,7 @@ import { DeliveryMobile } from "../DeliveyMobile/DeliveyMobile";
 import { ProdDescMobile } from "../ProdDescMobile/ProdDescMobile";
 import { Line } from "../ProdDescMobile/style";
 import { Earn } from "../Earn/Earn";
+import { YouMayAlsoLike } from "../YouMayAlsoLike/YouMayAlsoLike";
 
 export interface DinamicProductProps {
     children?: string,
@@ -21,11 +22,13 @@ export function DinamicProdMobile({ productName}: DinamicProductProps) {
             <OffersMobile></OffersMobile>
             <DeliveryMobile></DeliveryMobile>
             <Line></Line>
-            <ProdDescMobile title="Product Description"></ProdDescMobile>
+            <ProdDescMobile title="Product Description" arrow={true}></ProdDescMobile>
             <Line></Line>
-            <ProdDescMobile title="Rating Reviews"></ProdDescMobile>
+            <ProdDescMobile title="Rating Reviews" arrow={true}></ProdDescMobile>
             <Line></Line>
             <Earn></Earn>
+            <Line></Line>
+            <YouMayAlsoLike></YouMayAlsoLike>
         </Container>
     )
 }
