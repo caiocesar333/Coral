@@ -8,5 +8,7 @@ export const Container = styled.div`
 `;
 
 export const Img = styled.img`
-
+    &:hover{
+        cursor: pointer;
+    }
 `

@@ -14,9 +14,13 @@ export const P = styled.div`
     font-size: 16px;
     line-height: 20px;
     color: #13101E;
+    margin: 0;
 `;
 
 export const Img = styled.img`
     
 `;
 
+export const Wrapper = styled.div`
+    margin-top: 20px;
+`;
