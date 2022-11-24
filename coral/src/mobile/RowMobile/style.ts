@@ -70,6 +70,7 @@ export const Banner = styled.img`
     width: 150px;
 `
 export const Img = styled.img`
+width: 20px;
     margin-bottom: 0;
     /* margin-left: 130px; */
     &:hover{
