@@ -15,6 +15,12 @@ export const TextDiv = styled.div`
     gap: 8px;
 `;
 
+export const Wrapper = styled.div`
+    margin-top: 20px;
+    margin-left: 8px;
+`;
+
+
 export const Container = styled.div`
     width: 100vw;
     background: white;
@@ -22,8 +28,9 @@ export const Container = styled.div`
     border-top-right-radius: 16px;
     position: fixed;
     bottom: 0;
-    height: 40%;
+    height: 45%;
     padding: 20px;
+    
 `;
 
 export const RatingDiv = styled.div`

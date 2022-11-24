@@ -1,9 +1,11 @@
 import { useRef } from "react";
 import { useSpring, animated } from "react-spring"
 import { RatingDiv } from "../DescriptionMobile/style";
-import { Background, Container, Rate, TextDiv, Average, Text, Img } from "./style";
+import { Background, Container, Rate, TextDiv, Average, Text, Img, Wrapper } from "./style";
 import rate from "../../assets/Mobile/Products/rate.svg"
 import modalproduct from "../../assets/Mobile/Products/modalproduct.svg"
+import { SelectSize } from "../SelectSize/SelectSize";
+import { AddBagButton } from "../../components/Buttons/AddBagButton/AddBagButton";
 
 export interface ModalMobileProps {
     showModal: boolean,
@@ -44,6 +46,10 @@ export function ModalMobile({ showModal, setShowModal }: ModalMobileProps) {
                                     <Text>43 Ratings & 23 Reviews</Text>
                                 </TextDiv>
                             </RatingDiv>
+                            <SelectSize />
+                            <Wrapper>
+                                <AddBagButton />
+                            </Wrapper>
                         </Container>
                     </animated.div>
                 </Background>
