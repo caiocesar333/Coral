@@ -1,6 +1,6 @@
 import Favorite from "../../assets/wishlist.svg";
-import { Img } from "./style";
-import { Container, H4, H3, P, Wrapper, Div,Banner } from "./style";
+import { Discount, Img, OldPrice, PriceDiv } from "./style";
+import { Container, H4, H3, P, Wrapper, Div, Banner } from "./style";
 
 
 export interface RowMobileProps {
@@ -8,10 +8,11 @@ export interface RowMobileProps {
     image: string,
     name: string,
     description: string,
-    price: string
+    price: string,
+    category: boolean
 }
 
-export function RowMobile({ image, name, description, price }: RowMobileProps) {
+export function RowMobile({ image, name, description, price, category }: RowMobileProps) {
     return (
         <Container>
             <Banner src={image} alt={name} />
@@ -19,7 +20,14 @@ export function RowMobile({ image, name, description, price }: RowMobileProps) {
                 <Wrapper>
                     <H4>{name}</H4>
                     <H3>{description}</H3>
-                    <P>{price}</P>
+                    <PriceDiv>
+                        <P>{price}</P>
+                        {category
+                         ? <><OldPrice>$78.66</OldPrice>
+                         <Discount>50% OFF</Discount></>
+                         : null   
+                        }
+                    </PriceDiv>
                 </Wrapper>
                 <Img src={Favorite} alt="" />
             </Div>

@@ -7,4 +7,6 @@ export const Container = styled.div`
     max-width: 98%;
     overflow-y: visible;
     align-items: flex-start;
+    gap: 20px;
+    margin-left: 10px;
 `;

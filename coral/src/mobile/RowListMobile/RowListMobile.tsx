@@ -48,7 +48,7 @@ export function RowListMobile(){
          dragConstraints={{right: 0, left:-width}}>
             {produtos.map((produto, index) => (
                 <RowMobile image={produto.image} name={produto.name}
-                    description={produto.description} price={produto.price}></RowMobile>
+                    description={produto.description} price={produto.price} category={false}></RowMobile>
             ))}
         </Container>
     )

@@ -10,6 +10,7 @@ import { Container, MobileContainer } from "./style"
 import GlobalStyle from '../../styles/global';
 import HeroImg from "../../assets/hero.png"
 import MediaQuery from "react-responsive"
+// imports for Mobile Version
 import { NavbarMobile } from "../../mobile/NavbarMobile/NavbarMobile"
 import { BannerMobile } from "../../mobile/Banner/BannerMobile"
 import { TopCategories } from "../../mobile/TopCategories/TopCategories"

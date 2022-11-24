@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     /* width: 135px; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     cursor: grab;
 `;
 export const Wrapper = styled.div`
@@ -18,6 +18,13 @@ export const Div = styled.div`
     justify-content: space-between;
 `;
 
+export const PriceDiv = styled.div`  
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+`;
+
 export const H4 = styled.h4`
     margin: 0;
     font-weight: 700;
@@ -25,7 +32,7 @@ export const H4 = styled.h4`
     line-height: 20px;
 `;
 
-export const H3 = styled.h4`
+export const H3 = styled.h3`
     margin: 0;;
     font-weight: 400;
     font-size: 14px;
@@ -38,8 +45,25 @@ export const P = styled.p`
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    color: #171520
+    color: #171520;
 `;
+
+export const OldPrice = styled.p`
+    margin: 0;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    color: #626262;
+    text-decoration-line: line-through;
+`;
+
+export const Discount = styled.p`
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    color: #E21D1D;
+`;
+
 
 export const Banner = styled.img`
     border-radius: 16px;
