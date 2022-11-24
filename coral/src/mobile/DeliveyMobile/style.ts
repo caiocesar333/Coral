@@ -61,7 +61,7 @@ export const P = styled.p`
 export const Pincode = styled.div`
     width: 328px;
     height: 26px;
-    padding: 14px 12px 14px 16px;
+    padding: 14px 0 14px 16px;
     gap: 12px;
     background: #F1F1F1;
     border-radius: 4px;
@@ -77,6 +77,7 @@ export const Input = styled.input`
     line-height: 18px;
     border: none;
     outline: none;
+    background: #F1F1F1;
 `
 export const PincodeCheck = styled.p`
     font-weight: 600;

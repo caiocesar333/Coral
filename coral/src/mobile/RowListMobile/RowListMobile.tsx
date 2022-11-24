@@ -6,7 +6,6 @@ import { Container } from "./style";
 import image from "../../assets/Mobile/Products/image.svg"
 import image1 from "../../assets/Mobile/Products/image1.svg"
 import image2 from "../../assets/Mobile/Products/image2.svg"
-import image3 from "../../assets/Mobile/Products/image3.svg"
 import { motion } from "framer-motion";
 
 export function RowListMobile(){

@@ -5,3 +5,7 @@ export const Container = styled.div`
     width: 100%;
     flex-direction: column;
 `;
+
+export const Img = styled.img`
+   
+`;
