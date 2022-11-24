@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Img } from "../Icons/style";
-import { Container, P, TextDiv, Line } from "./style";
+import { Container, P, TextDiv } from "./style";
 import arrow from "../../assets/Mobile/arrowDrop.svg"
 import arrowUp from "../../assets/Mobile/arrowUp.svg"
 
