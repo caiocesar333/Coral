@@ -35,6 +35,11 @@ export const H4 = styled.h4`
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    &:hover{
+        cursor: pointer;}
+    &::first-letter{
+        text-transform: uppercase;
+    }
 `;
 
 export const H3 = styled.h4`
@@ -79,7 +84,10 @@ export const Rate = styled.p`
     color: #1B4B66;
 `;
 
-export const Banner = styled.img``;
+export const Banner = styled.img`
+    &:hover{
+        cursor: pointer;}
+`;
 
 export const Img = styled.img`
     margin-top: 20px;

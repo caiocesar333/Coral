@@ -11,37 +11,37 @@ export function ProductGridList() {
     
     const produtos = [{
         image: image,
-        name: "Grande",
+        name: "grande",
         description: "Blossom Pouch",
         price: "$39.49"
     },
     {
         image: image1,
-        name: "Coach",
+        name: "coach",
         description: "Leather Coach Bag",
         price: "$54.69"
     },
     {
         image: image2,
-        name: "Remus",
+        name: "remus",
         description: "Brown Strap Bag",
         price: "$57.00"
     },
     {
         image: image3,
-        name: "Boujee",
+        name: "boujee",
         description: "Black Bag",
         price: "$56.49"
     },
     {
         image: image,
-        name: "Grande",
+        name: "grande",
         description: "Blossom Pouch",
         price: "$39.49"
     },
     {
         image: image1,
-        name: "Coach",
+        name: "coach",
         description: "Leather Coach Bag",
         price: "$54.69"
     },
