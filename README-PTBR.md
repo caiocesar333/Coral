@@ -1,6 +1,6 @@
 # Coral
 
-Projeto desenvolvido para a primeira parte (de três) do projeto final do PB da CompassUol. A intenção é criar o layout descrito no [figma] (https://www.figma.com/file/bCM9qxUHMeb4rP51F2OSc0/PWA-eCommerce-Theme-(Community)-(Copy)?node-id=184%3A0&t=toeiVRDJPBf0h8Fi-0).
+Projeto desenvolvido para a primeira parte (de três) do projeto final do PB da CompassUol. A intenção é criar o layout descrito no [figma] (https://www.figma.com/file/bCM9qxUHMeb4rP51F2OSc0/PWA-eCommerce-Theme-(Community)-(Copy)?node-id=184%3A0&t=toeiVRDJPBf0h8Fi-0) e documenta-lo usando Storybook.
 
 ## 🚀 Começando
 
@@ -36,6 +36,11 @@ Basta rodar o comando
 ```
 npm teste
 ```
+Note que toda a documentação dos componentes está no storybook, e pode ser vista através do comando 
+
+```
+npm run storybook
+```
 
 ## 🛠️ Construído com
 
@@ -46,6 +51,7 @@ Mencione as ferramentas que você usou para criar seu projeto
 * [ReactTabs](https://www.npmjs.com/package/react-tabs)
 * [ReactSpring](https://react-spring.dev/)
 * [Styled Components](https://styled-components.com/)
+* [Storybook](https://storybook.js.org/)
 
 ## 🖇️ Colaborando
 
