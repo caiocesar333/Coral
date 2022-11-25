@@ -16,4 +16,5 @@ export const Img = styled.img`
   margin: 0;
   z-index: 10;
 `
+export const Wrapper = styled.div``
 
