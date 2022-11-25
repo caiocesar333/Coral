@@ -56,6 +56,19 @@ export function ProductRowList() {
         description: "Leather Coach Bag",
         price: "$54.69"
     },
+    {
+        image: image2,
+        name: "remus",
+        description: "Brown Strap Bag",
+        price: "$57.00"
+    },
+    {
+        image: image3,
+        name: "boujee",
+        description: "Black Bag",
+        price: "$56.49"
+    },
+
     ]
 
     return (

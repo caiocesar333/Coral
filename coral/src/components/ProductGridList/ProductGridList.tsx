@@ -45,6 +45,24 @@ export function ProductGridList() {
         description: "Leather Coach Bag",
         price: "$54.69"
     },
+    {
+        image: image1,
+        name: "boujee",
+        description: "Black Bag",
+        price: "$56.49"
+    },
+    {
+        image: image2,
+        name: "grande",
+        description: "Blossom Pouch",
+        price: "$39.49"
+    },
+    {
+        image: image3,
+        name: "coach",
+        description: "Leather Coach Bag",
+        price: "$54.69"
+    },
     ]
 
     return (
