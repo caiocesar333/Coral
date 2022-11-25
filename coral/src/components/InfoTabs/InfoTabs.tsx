@@ -43,6 +43,7 @@ export function InfoTabs() {
                     </P>
                 </STabPanel>
                 <STabPanel>
+                    <P>#BRASIL HEXA</P>
                     <P>Dolor augue mattis duis semper gravida enim eu imperdiet sit. Et pharetra
                         platea pretium nec feugiat tincidunt quam leo tristique. Nulla enim consectetur
                         sit et tempus, faucibus leo ac cras. Purus ut non eu mus volutpat.
