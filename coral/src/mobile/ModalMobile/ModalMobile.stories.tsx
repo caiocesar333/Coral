@@ -1,7 +1,7 @@
 import { ModalMobile } from "./ModalMobile";
 
 export default {
-    title: "Mobile Components/ModalMobile",
+    title: "Mobile Components/NavFixed/ModalMobile",
     component: ModalMobile,
 } 
 

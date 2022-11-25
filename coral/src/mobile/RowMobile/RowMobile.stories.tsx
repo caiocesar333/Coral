@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react"
 import { RowMobile, RowMobileProps } from "./RowMobile";
 
 export default {
-    title: "Mobile Components/RowMobile",
+    title: "Mobile Components/RowListMobile/RowMobile",
     component: RowMobile,
     args: {
         name: "name",

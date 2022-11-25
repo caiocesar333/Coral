@@ -1,7 +1,7 @@
 import { MediaMobile } from "./MediaMobile";
 
 export default {
-    title: "Mobile Components/MediaMobile",
+    title: "Mobile Components/DropDownFooter/FooterMobile/MediaMobile",
     component: MediaMobile,
 } 
 

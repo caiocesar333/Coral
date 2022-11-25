@@ -1,7 +1,7 @@
 import { SortMobile } from "./SortMobile";
 
 export default {
-    title: "Mobile Components/SortMobile",
+    title: "Mobile Components/FilteringLabel/FilterModal/SortMobile",
         component: SortMobile,
 } 
 
