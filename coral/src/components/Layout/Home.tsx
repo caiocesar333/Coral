@@ -12,7 +12,7 @@ import HeroImg from "../../assets/hero.png"
 import MediaQuery from "react-responsive"
 // imports for Mobile Version
 import { NavbarMobile } from "../../mobile/NavbarMobile/NavbarMobile"
-import { BannerMobile } from "../../mobile/Banner/BannerMobile"
+import { BannerMobile } from "../../mobile/BannerMobile/BannerMobile"
 import { TopCategories } from "../../mobile/TopCategories/TopCategories"
 import { RowListMobile } from "../../mobile/RowListMobile/RowListMobile"
 import { LabelMobile } from "../../mobile/LabelMobile/LabelMobile"

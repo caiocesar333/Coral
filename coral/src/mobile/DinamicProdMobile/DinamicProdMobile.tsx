@@ -2,7 +2,7 @@ import { Container, Img } from "./style";
 import image from "../../assets/Mobile/Products/ProductPage/1.png"
 import { DescriptionMobile } from "../DescriptionMobile/DescriptionMobile";
 import { OffersMobile } from "../OffersMobile/OffersMobile";
-import { DeliveryMobile } from "../DeliveyMobile/DeliveyMobile";
+import { DeliveryMobile } from "../DeliveryMobile/DeliveryMobile";
 import { ProdDescMobile } from "../ProdDescMobile/ProdDescMobile";
 import { Line } from "../ProdDescMobile/style";
 import { Earn } from "../Earn/Earn";
