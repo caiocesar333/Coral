@@ -25,7 +25,6 @@ export function FilterOptions({ filter }: FilterOptionsProps) {
                 <SelectFilter filterName="Maroon Red" open={open} setOpen={setOpen}/>
                 <SelectFilter filterName="Crimson Red" open={open} setOpen={setOpen}/>
                 <SelectFilter filterName="Seinna Pink" open={open} setOpen={setOpen}/>
-                <SelectFilter filterName="Seinna Pink" open={open} setOpen={setOpen}/>
                 <SelectFilter filterName="Teal" open={open} setOpen={setOpen}/>
                 <SelectFilter filterName="Aquamarine" open={open} setOpen={setOpen}/>
                 <SelectFilter filterName="Off-White" open={open} setOpen={setOpen}/>
