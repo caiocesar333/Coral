@@ -11,10 +11,15 @@ export const Wrapper = styled.div`
     flex-flow: column wrap;
 `;
 
+export const FavDiv = styled.div`
+margin-top:15px ;
+`
+
 export const Div = styled.div`  
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
 `;
 
 export const H4 = styled.h4`

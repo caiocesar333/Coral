@@ -1,6 +1,6 @@
-import Favorite from "../../assets/wishlist.svg";
-import { Img } from "./style";
-import { Container, H4, H3, P, Wrapper, Div,Banner } from "./style";
+import { Favorite } from "../Icons/Favorite";
+import { FavDiv, Img } from "./style";
+import { Container, H4, H3, P, Wrapper, Div, Banner } from "./style";
 
 
 export interface ProductRowProps {
@@ -12,7 +12,7 @@ export interface ProductRowProps {
 }
 
 export function ProductRow({ image, name, description, price }: ProductRowProps) {
-    const redirect = ()=>{
+    const redirect = () => {
         window.location.href = `product/${name}/${name}Image`
     }
     return (
@@ -24,7 +24,9 @@ export function ProductRow({ image, name, description, price }: ProductRowProps)
                     <H3>{description}</H3>
                     <P>{price}</P>
                 </Wrapper>
-                <Img src={Favorite} alt="" />
+                <FavDiv>
+                    <Favorite />
+                </FavDiv>
             </Div>
         </Container>
     )
