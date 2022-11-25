@@ -3,7 +3,8 @@ import { AddWishButton } from "../Buttons/AddWishButton/AddWishButton";
 import { DeliveryDetails } from "../DeliveryDetails/DeliveryDetails";
 import { DinamicPrice } from "../DinamicPrice/DinamicPrice";
 import { Star } from "../Icons/Stars";
-import { Offers } from "../Offers/Offers";
+import { OfferList } from "../OfferList/OfferList";
+// import { Offers } from "../Offers/Offers";
 import { Rating, Rate, OffersDiv, ButtonsDiv } from "./style";
 import { Container, Description, H3, Wrapper } from "./style";
 
@@ -28,7 +29,7 @@ export function ProductDescription({ productName }: ProductDescriptionProps) {
             </Wrapper>
             <DeliveryDetails />
             <OffersDiv>
-                <Offers />
+                <OfferList/>
             </OffersDiv>
             <ButtonsDiv>
                 <AddBagButton />
