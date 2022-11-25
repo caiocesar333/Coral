@@ -10,12 +10,15 @@ export interface CarryProps{
 
 
 export function Carry({title, description,carry}: CarryProps) {
+    const redirectError = ()=>{
+        window.location.href = "/NotFound"
+    }
     if (carry) {
         return (
             <Container>
                 <H1>{title}</H1>
                 <H3>{description}</H3>
-                <Button>
+                <Button onClick={redirectError}>
                     <img src={Arrow} alt="" />
                     <P>See more</P>
                 </Button>

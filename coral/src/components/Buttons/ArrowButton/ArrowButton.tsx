@@ -9,8 +9,11 @@ export interface ArrowButtonProps{
 }
 
 export function ArrowButton({children, color, bg, filter}: ArrowButtonProps){
+    const redirectError = ()=>{
+        window.location.href = "/NotFound"
+    }
     return(
-        <Button color={color} bg={bg}>
+        <Button onClick={redirectError} color={color} bg={bg}>
             <Img filter={filter} src={arrowButton}/>
         </Button>
     )

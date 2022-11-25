@@ -23,6 +23,9 @@ export const H4 = styled.h4`
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+    &::first-letter{
+        text-transform: uppercase;
+    }
 `;
 
 export const H3 = styled.h4`

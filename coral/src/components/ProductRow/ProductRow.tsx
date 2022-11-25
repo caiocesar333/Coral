@@ -12,12 +12,15 @@ export interface ProductRowProps {
 }
 
 export function ProductRow({ image, name, description, price }: ProductRowProps) {
+    const redirect = ()=>{
+        window.location.href = `product/${name}/${name}Image`
+    }
     return (
         <Container>
-            <Banner src={image} alt={name} />
+            <Banner onClick={redirect} src={image} alt={name} />
             <Div>
                 <Wrapper>
-                    <H4>{name}</H4>
+                    <H4 onClick={redirect}  >{name}</H4>
                     <H3>{description}</H3>
                     <P>{price}</P>
                 </Wrapper>
