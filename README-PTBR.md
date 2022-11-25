@@ -1,6 +1,6 @@
-# Título do projeto
+# Coral
 
-Um parágrafo da descrição do projeto vai aqui
+Projeto desenvolvido para a primeira parte (de três) do projeto final do PB da CompassUol. A intenção é criar o layout descrito no [figma] (https://www.figma.com/file/bCM9qxUHMeb4rP51F2OSc0/PWA-eCommerce-Theme-(Community)-(Copy)?node-id=184%3A0&t=toeiVRDJPBf0h8Fi-0).
 
 ## 🚀 Começando
 
@@ -8,63 +8,44 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
+```
+1-Clone o projeto para o repositório desejado
+2-Instale as dependências
+3-Rode o projeto juntamente com o ambiente de testes
+```
+
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-Dar exemplos
+VsCode
+Npm atualizado
 ```
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
 ```
-Dar exemplos
+1-Git clone
+2-npm i
 ```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 ## ⚙️ Executando os testes
 
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
+Basta rodar o comando 
 
 ```
-Dar exemplos
+npm teste
 ```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Implantação
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
 
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [React](https://reactjs.org/) 
+* [TypeScript](https://www.typescriptlang.org/) 
+* [ReactTabs](https://www.npmjs.com/package/react-tabs)
+* [ReactSpring](https://react-spring.dev/)
+* [Styled Components](https://styled-components.com/)
 
 ## 🖇️ Colaborando
 
@@ -72,28 +53,19 @@ Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoS
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/caiocesar333/coral). 
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **Caio César** - *Sprint 7* - [caiocesar333](https://github.com/caiocesar333)
 
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+Você também pode ver a lista de todos os [colaboradores](https://github.com/caiocesar333/coral/colaboradores) que participaram deste projeto.
 
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
 
-
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
+* Obrigado aos instrutores por tirarem todas as dúvidas necessárias 📢;
+* Aos meus colegas por sempre se dispor a ajudar 🍺;
+* E à [Compass UOL](https://compass.uol/pt/home/);
