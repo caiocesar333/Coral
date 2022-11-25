@@ -7,6 +7,7 @@ import { ProdDescMobile } from "../ProdDescMobile/ProdDescMobile";
 import { Line } from "../ProdDescMobile/style";
 import { Earn } from "../Earn/Earn";
 import { YouMayAlsoLike } from "../YouMayAlsoLike/YouMayAlsoLike";
+// import { ButtonFixed } from "../ButtonFixed/ButtonFixed";
 
 export interface DinamicProductProps {
     children?: string,
@@ -29,6 +30,7 @@ export function DinamicProdMobile({ productName}: DinamicProductProps) {
             <Earn></Earn>
             <Line></Line>
             <YouMayAlsoLike></YouMayAlsoLike>
+            {/* <ButtonFixed/> */}
         </Container>
     )
 }

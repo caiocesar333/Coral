@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
 `;
 
 export const Img = styled.img`
