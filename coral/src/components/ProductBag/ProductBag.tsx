@@ -30,6 +30,7 @@ export function ProductBag() {
         getCart();
     }, []);
 
+
     return (
         <Container>
             <Wrapper>

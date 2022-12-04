@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef,  } from "react";
 import { useSpring, animated } from "react-spring"
 import { PlaceOrder } from "../Buttons/PlaceOrder/PlaceOrder";
 import { Pincode } from "../Pincode/Pincode";

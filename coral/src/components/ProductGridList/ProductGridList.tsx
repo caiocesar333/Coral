@@ -21,7 +21,7 @@ export function ProductGridList({ cat, filters, sort }: any) {
                     }
                 );
                 const my_prod = await api_response.json();
-                my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
+                // my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
                 setProducts(my_prod);
             } catch (err) { }
         };

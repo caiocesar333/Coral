@@ -1,19 +1,20 @@
-import { Container, P, Price, Type } from "./style";
+import { useEffect, useState } from "react";
+import { Price } from "./Price/Price";
+import { Container, P, Type } from "./style";
 
 
-export function TotalPrice(){
-    return(
+export function TotalPrice() {
+
+    return (
         <Container>
+
             <Type>
-                <P>Subtotal:</P>
-                <P>Tax:</P>
+                <P>Subtotal 1:</P>
+                <P>Subtotal 2: </P>
                 <P>Total:</P>
             </Type>
-            <Price>
-                <P>$109.38</P>
-                <P>$2.00</P>
-                <P>$111.38</P>
-            </Price>
-        </Container>
+            <Price/>
+
+        </Container >
     )
 }

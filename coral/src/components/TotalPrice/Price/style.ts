@@ -14,6 +14,13 @@ export const Type = styled.div`
     flex-direction: column;
 `;
 
+export const PriceDiv = styled.div`
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+`;
+
 export const P = styled.p`
     font-weight: 400;
     font-size: 14px;

@@ -70,5 +70,8 @@ export const PriceTag = styled.p`
 
 export const Cross = styled.img`
     width: 24px;
-height: 24px;
+    height: 24px;
+    &:hover{
+        cursor: pointer;
+    }
 `
