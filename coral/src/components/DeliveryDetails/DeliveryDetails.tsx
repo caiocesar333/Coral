@@ -13,7 +13,7 @@ export function DeliveryDetails() {
                 <Check>Check estimated delivery date/pickup option.</Check>
                 <QuantityDiv>
                     <Details>Quantity:</Details>
-                    <QuantityHandle/>
+                    <QuantityHandle quantity={1}/>
                 </QuantityDiv>
             </Wrapper>
             <Pincode placeholder="Valid Pincode"/>

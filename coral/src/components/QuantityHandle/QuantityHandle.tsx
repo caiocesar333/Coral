@@ -4,8 +4,12 @@ import plus from "../../assets/plus.svg"
 import { useState } from "react";
 import { Handle, Img, P } from "./style";
 
-export function QuantityHandle() {
-    const [count, setCount] = useState(0);
+export interface QuantityHandleProps{
+    quantity:number
+}
+
+export function QuantityHandle({quantity}:QuantityHandleProps) {
+    const [count, setCount] = useState(quantity);
     const incrementCount = () => {
         setCount(count + 1);
     };

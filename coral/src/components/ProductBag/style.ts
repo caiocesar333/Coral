@@ -12,6 +12,19 @@ export const Container = styled.div`
     z-index: 1000;
 `;
 
+export const Item = styled.div`
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    gap: 8px;
+`;
+
+export const Wrapper = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+`;
+
 export const TextDiv = styled.div`
     /* width: 200px; */
     display: flex;
@@ -20,6 +33,7 @@ export const TextDiv = styled.div`
 `;
 
 export const PriceDiv = styled.div`
+    width: 100%;
     display: flex;
     flex-flow: column;
     margin-bottom: 35px;
@@ -43,6 +57,7 @@ export const P = styled.p`
         color: black;
         font-weight: 500;
     }
+    white-space: nowrap;
 `
 
 export const PriceTag = styled.p`

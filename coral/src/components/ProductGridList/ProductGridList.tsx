@@ -1,13 +1,6 @@
 import { Container } from "./style";
-
-import image from "../../assets/products/image.png"
-import image1 from "../../assets/products/image1.png"
-import image2 from "../../assets/products/image2.png"
-import image3 from "../../assets/products/image3.png"
 import { ProductGrid } from "../ProductGrid/ProductGrid";
-import { useEffect, useState } from "react";
-import axios from "axios";
-import { Item } from "../SelectFilter/style";
+import { useEffect, useState } from "react"
 
 
 export function ProductGridList({ cat, filters, sort }: any) {
@@ -23,7 +16,7 @@ export function ProductGridList({ cat, filters, sort }: any) {
                     {
                         method: "GET",
                         headers: {
-                            "Content-Type": "application/json"
+                            "Content-Type": "application/json",
                         }
                     }
                 );

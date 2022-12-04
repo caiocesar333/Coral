@@ -8,6 +8,7 @@ import { Container } from "../style";
 import MediaQuery from "react-responsive";
 import { BackLabel } from "../../../mobile/BackLabel/BackLabel";
 import { DinamicProdMobile } from "../../../mobile/DinamicProdMobile/DinamicProdMobile";
+// import { publicRequest } from "../../../methods/requestMethods";
 
 export function ProductPage() {
 
