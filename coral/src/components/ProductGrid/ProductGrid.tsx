@@ -6,10 +6,10 @@ import { Container, Img, H4, H3, P, Wrapper, Div, Banner } from "./style";
 
 export interface ProductGridProps {
     children?: string,
-    image: string,
+    image?: string,
     name: string,
     description: string,
-    price: string
+    price: string,
 }
 
 export function ProductGrid({ image, name, description, price }: ProductGridProps) {

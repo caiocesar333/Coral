@@ -1,5 +1,5 @@
 import { Favorite } from "../Icons/Favorite";
-import { FavDiv, Img } from "./style";
+import { FavDiv } from "./style";
 import { Container, H4, H3, P, Wrapper, Div, Banner } from "./style";
 
 

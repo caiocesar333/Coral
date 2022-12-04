@@ -14,6 +14,7 @@ export function FilterOptions({ filter }: FilterOptionsProps) {
         setOpen(!open)
     };
 
+
     return (<>
         <Container>
             <P>{filter}</P>
