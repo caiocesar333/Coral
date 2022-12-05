@@ -3,15 +3,15 @@ import { Navbar } from "../../Navbar/Navbar";
 import { Container, MobileContainer, Wrapper } from "../style";
 import HeroImg from "../../../assets/heroBag.png"
 import GlobalStyle from "../../../styles/global";
-import { Showcase } from "../../Showcase/Showcase";
 import { Footer } from "../../Footer/Footer";
 //imports for MobileVersion
 import MediaQuery from "react-responsive"
 import { CategoryLabel } from "../../../mobile/CategoryLabel/CategoryLabel";
 import { FilteringLabel } from "../../../mobile/FilteringLabel/FilteringLabel";
 import { PaginationButtons } from "../../PaginationButtons/PaginationButtons";
+import { Showcase2 } from "../../Showcase/Page2/Showcase2";
 
-export function Handbags() {
+export function Handbags2() {
     return (<>
         <MediaQuery minWidth={1200}>
             <Container>
@@ -20,7 +20,7 @@ export function Handbags() {
                 <Wrapper>
                     <Hero carry={false} image={HeroImg} />
                 </Wrapper>
-                <Showcase />
+                <Showcase2 />
                 <PaginationButtons/>
                 <Footer />
             </Container>
