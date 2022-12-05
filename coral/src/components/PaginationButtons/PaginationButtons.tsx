@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Container, Next, Pages, Wrapper } from "./style";
 
 
