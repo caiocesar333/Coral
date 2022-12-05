@@ -43,7 +43,7 @@ export function Price() {
             {cart.map((carrinho: any, index: any) => {
                 return (
                     <>
-                        <P>{carrinho.price}</P>
+                        <P>${carrinho.price}</P>
                     </>
                 )
             })
@@ -53,7 +53,7 @@ export function Price() {
                 if(soma===0){
                     return <></>
                 } else return (<>
-                <P>{soma+58.99}</P></>)
+                <P>${(soma+58.99).toFixed(2)}</P></>)
             })
             }
         </PriceDiv>

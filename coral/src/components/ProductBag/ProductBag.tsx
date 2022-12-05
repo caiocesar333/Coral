@@ -44,7 +44,7 @@ export function ProductBag() {
                                 <QuantityHandle quantity={produto.quantity}/>
                             </TextDiv>
                             <PriceDiv>
-                                <Cross alt="" src={crossSmall}></Cross>
+                                <Cross  alt="" src={crossSmall}></Cross>
                                 <PriceTag>{produto.price}</PriceTag>
                             </PriceDiv>
                         </Item>
