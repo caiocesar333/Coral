@@ -2,36 +2,50 @@ import { CheckBox, CheckBoxLabel, Container, Item } from "./style";
 import checkbox from "../../assets/checkbox.svg"
 import checkboxChecked from "../../assets/checkboxC.svg"
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export interface SelectFilterProps {
     open: boolean,
     setOpen: React.Dispatch<React.SetStateAction<boolean>>,
-    filterName: string
+    filterName: string,
+    filter:any, 
+    setFilter:React.Dispatch<React.SetStateAction<string>> | any
 }
 
-export function SelectFilter({ open, setOpen, filterName }: SelectFilterProps) {
-    const [checked, setChecked] = useState(false);
 
+export function SelectFilter({ open, setOpen, filterName,filter,setFilter }: SelectFilterProps) {
+    const [check, setChecked] = useState(false);
     const handleCheck = () => {
-        setChecked(!checked)
+        setChecked(!check)
     };
 
-    const [filters, setFilters] = useState<any | null>(false);
-    const handleFilters = (e: any) => {
-        if(filters===false){
-            let value = filterName
-            setFilters(value)
-        } else{
-            setFilters(false)
+    const str = filterName;
+    const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+
+
+    const location = useLocation()
+    const filtering = location.pathname.split("/")[3]
+
+    const handleFilters = (filterName: any) => {
+        if (filter === "initial" && check ===false) {
+            const value = filterName;
+            setFilter(value)
+            console.log(filterName)
+        } if (filter === "initial" && check ===true) {
+            const value = filterName;
+            setFilter(value)
+            console.log(filterName)
+        } if(filter === filterName && check === true){
+            setFilter("initial")
         }
-        return filters
+        
     }
-    console.log(filters)
+
     return (
         <Container>
             <Item>
-                <CheckBox onClick={event=>{handleCheck();handleFilters(filterName)}} src={checked ? checkboxChecked : checkbox} />
-                <CheckBoxLabel onClick={event=>{handleCheck();handleFilters(filterName)}} >{filterName}</CheckBoxLabel>
+                <CheckBox type="checkbox" checked={check} onChange={event => { handleCheck(); handleFilters(filterName) }} />
+                <CheckBoxLabel onClick={event => { handleCheck(); handleFilters(filterName) }}>{str2}</CheckBoxLabel>
             </Item>
         </Container>
     )

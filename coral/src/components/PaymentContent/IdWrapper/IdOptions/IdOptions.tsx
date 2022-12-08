@@ -29,7 +29,7 @@ export function IdOptions({ img, placeholder, name }: IdOptionsProps) {
             {open ?
                 <><HiddenDiv>
                     <InputId placeholder={placeholder} />
-                    <SelectFilter filterName="Save this for future transactions" 
+                    <SelectFilter filter={""} setFilter={""} filterName="Save this for future transactions" 
                     open={open}  setOpen={setOpen}  />
                 </HiddenDiv></>
                 : <></>}

@@ -21,6 +21,6 @@ export const CheckBoxLabel = styled.p`
     margin: 5px;
 `;
 
-export const CheckBox = styled.img`
-
+export const CheckBox = styled.input`
+    
 `

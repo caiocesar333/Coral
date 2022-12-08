@@ -15,8 +15,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/handbags/1" element={<Handbags />}></Route>
-        <Route path="/handbags/2" element={<Handbags2 />}></Route>
+        <Route path="/handbags/1/:filter" element={<Handbags />}></Route>
+        <Route path="/handbags/2/:filter" element={<Handbags2 />}></Route>
         <Route path="/product/:productName/:imgUrl" element={<ProductPage />}></Route>
         <Route path="/NotFound" element={<NotFound />}></Route>
         <Route path='/mycart' element={<MyCart />} ></Route>
