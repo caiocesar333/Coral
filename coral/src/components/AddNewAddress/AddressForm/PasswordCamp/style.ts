@@ -8,7 +8,6 @@ export const Container = styled.div`
     justify-content: flex-start;
     
 `;
-
 export const P = styled.p`
     font-weight: 500;
     font-size: 16px;
@@ -22,7 +21,7 @@ export const Input = styled.input`
     padding: 16px 12px 16px 16px;
     gap: 12px;
 
-    width: 90%;
+    width: 40%;
     border: none;
     outline: none;
 

@@ -1,3 +1,4 @@
+import { Footer } from "../../components/Footer/Footer";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { PageLabel } from "../../components/TextComponents/PageLabel/PageLabel";
 import { PageTitle } from "../../components/TextComponents/PageTitle/PageTitle";
@@ -17,6 +18,7 @@ export function UserProfile(){
                 <UserMenu/>
                 <UserContent/>
             </Wrapper>
+            <Footer/>
         </Container>
     )
 }
