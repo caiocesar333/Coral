@@ -5,6 +5,10 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    &:hover{
+        cursor: pointer;
+        border-left: 2px solid #000
+    }
 `;
 
 export const P = styled.p`
