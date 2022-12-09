@@ -7,11 +7,12 @@ import { Container } from "./style";
 export function Showcase(){
 
     const [filter, setFilter] = useState("initial");
+    
 
     return(
         <Container>
             <Filter filter={filter} setFilter={setFilter}></Filter>
-            <ProdShowcase></ProdShowcase>
+            <ProdShowcase filter={filter} setFilter={setFilter}></ProdShowcase>
         </Container>
     )
 }

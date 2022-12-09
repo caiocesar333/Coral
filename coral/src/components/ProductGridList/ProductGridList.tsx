@@ -2,39 +2,55 @@ import { Container } from "./style";
 import { ProductGrid } from "../ProductGrid/ProductGrid";
 import { useEffect, useState } from "react"
 
+export interface ProductGridListpROPS{
+    filter:any, 
+    setFilter:React.Dispatch<React.SetStateAction<string>>,
+}
 
-export function ProductGridList({ cat, filters, sort }: any) {
+
+export function ProductGridList({ filter, setFilter }: ProductGridListpROPS) {
     const [products, setProducts] = useState([]);
     const [filteredProd, setfilteredProd] = useState([]);
 
     useEffect(() => {
         // getAllUser();
+        if(filter === "initial"){
+            
+        }
         const getProducts = async () => {
             try {
-                const api_response = await fetch(
-                    "http://localhost:5000/api/products",
-                    {
-                        method: "GET",
-                        headers: {
-                            "Content-Type": "application/json",
+                if(filter === "initial"){
+                    const api_response = await fetch(
+                        `http://localhost:5000/api/products`,
+                        {
+                            method: "GET",
+                            headers: {
+                                "Content-Type": "application/json",
+                            }
                         }
-                    }
-                );
-                const my_prod = await api_response.json();
-                // my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
-                setProducts(my_prod);
+                    );
+                    const my_prod = await api_response.json();
+                    // my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
+                    setProducts(my_prod);
+                } else{
+                    const api_response = await fetch(
+                        `http://localhost:5000/api/products?color=${filter}`,
+                        {
+                            method: "GET",
+                            headers: {
+                                "Content-Type": "application/json",
+                            }
+                        }
+                    );
+                    const my_prod = await api_response.json();
+                    // my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
+                    setProducts(my_prod);
+                }
             } catch (err) { }
         };
         getProducts();
-    }, []);
+    }, [filter]);
 
-    useEffect(() => {
-        cat && setfilteredProd(products.filter((item:any) =>
-            Object.entries(filters).every(([key, value]) =>
-                item[key].includes(value)
-            )
-        ))
-    }, [products, cat, filters,])
 
     return (
         <Container>
