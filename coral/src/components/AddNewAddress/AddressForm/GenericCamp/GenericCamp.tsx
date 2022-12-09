@@ -1,4 +1,4 @@
-import { CepContainer, P } from "./style";
+import { CepContainer, Input, P } from "./style";
 import "../../../../styles/global.css"
 
 export interface GenericCampProps{
@@ -14,7 +14,7 @@ export function GenericCamp({campName,value}:GenericCampProps){
     return(
         <CepContainer>
             <P>{campName}</P>
-            <input value={value} type="text" placeholder={str}/>
+            <Input value={value} type="text" placeholder={str}/>
         </CepContainer>
     )
 }

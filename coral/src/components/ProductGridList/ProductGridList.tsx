@@ -10,8 +10,6 @@ export interface ProductGridListpROPS{
 
 export function ProductGridList({ filter, setFilter }: ProductGridListpROPS) {
     const [products, setProducts] = useState([]);
-    const [filteredProd, setfilteredProd] = useState([]);
-
     useEffect(() => {
         // getAllUser();
         if(filter === "initial"){

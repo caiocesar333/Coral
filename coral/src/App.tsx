@@ -9,6 +9,7 @@ import { Handbags2 } from './components/Layout/Categorys/Handbags2';
 import { CheckOut } from './pages/CheckOut/CheckOut';
 import { MyCart } from './pages/MyCart/MyCart';
 import { CheckoutPayment } from './pages/CheckoutPayment/CheckoutPayment';
+import { UserProfile } from './pages/UserProfile/UserProfile';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/mycart' element={<MyCart />} ></Route>
         <Route path='/checkout' element={<CheckOut />} ></Route>
         <Route path='/payment' element={<CheckoutPayment />} ></Route>
+        <Route path='/user' element={<UserProfile />} ></Route>
       </Routes>
     </Router>
   );
