@@ -13,7 +13,7 @@ export function UserProfile(){
         <Container>
             <Navbar/>
             <PageLabel from="Home" to="User Profile" />
-            <PageTitle title="Personal Information" />
+            <PageTitle title="Personal Information" button={true}/>
             <Wrapper>
                 <UserMenu/>
                 <UserContent/>

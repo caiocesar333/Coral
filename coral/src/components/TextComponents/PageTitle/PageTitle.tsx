@@ -1,4 +1,6 @@
 import { Container, P } from "./style";
+import logout from "../../../assets/logout.svg"
+import { SmallWhiteButton } from "../../Buttons/WhiteButton/SmallWhiteButton/SmallWhiteButton";
 
 export interface PageTitleProps{
     title:string,
@@ -6,10 +8,14 @@ export interface PageTitleProps{
     search?:boolean,
 }
 
-export function PageTitle({title}:PageTitleProps){
+export function PageTitle({title,button}:PageTitleProps){
     return(
         <Container>
             <P>{title}</P>
+            {button ? <SmallWhiteButton img={logout} text="Logout"/>
+
+                    :<></>
+            }
         </Container>
     )
 }

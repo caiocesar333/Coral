@@ -4,6 +4,8 @@ export const Container = styled.div`
     display: flex;
     width: 80%;
     margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 export const P = styled.p`

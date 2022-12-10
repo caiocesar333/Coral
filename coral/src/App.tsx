@@ -8,7 +8,7 @@ import { NotFound } from './components/Layout/NotFound/NotFound';
 import { Handbags2 } from './components/Layout/Categorys/Handbags2';
 import { CheckOut } from './pages/CheckOut/CheckOut';
 import { MyCart } from './pages/MyCart/MyCart';
-import { CheckoutPayment } from './pages/CheckoutPayment/CheckoutPayment';
+import { CheckoutPayment } from './pages/CheckOut/CheckoutPayment/CheckoutPayment';
 import { UserProfile } from './pages/UserProfile/UserProfile';
 
 function App() {
