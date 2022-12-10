@@ -1,9 +1,7 @@
 import { Container, P } from "./style";
 import arrow from "../../../assets/arrow2.svg"
-import { JsxElement } from "typescript";
 
 export interface UserTabProps{
-    children?:JSX.Element,
     text:string
 }
 

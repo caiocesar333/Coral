@@ -16,6 +16,7 @@ export function UserProfile(){
             <PageTitle title="Personal Information" />
             <Wrapper>
                 <UserMenu/>
+                <UserContent/>
             </Wrapper>
             <Footer/>
         </Container>
