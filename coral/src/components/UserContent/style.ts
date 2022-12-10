@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 70%;
+    width:100%;
 `;
 export const TextDiv = styled.div`
     width: 100%;
