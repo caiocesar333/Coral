@@ -5,7 +5,11 @@ import { ProdCartItem } from "./ProdCartItem/ProdCartItem";
 import { ActionWrapper } from "./ProdCartItem/style";
 import { Container, ProductWrapper, PriceWrapper, P, Wrapper } from "./style";
 
-export function CartItem() {
+export interface CartItemProps{
+    actions?: boolean,
+}
+
+export function CartItem({actions}:CartItemProps) {
 
     const [cart, setCart] = useState([]);
 
