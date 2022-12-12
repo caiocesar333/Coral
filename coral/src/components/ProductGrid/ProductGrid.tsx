@@ -14,7 +14,7 @@ export interface ProductGridProps {
 
 export function ProductGrid({ image, name, description, price }: ProductGridProps) {
     const redirect = ()=>{
-        window.location.href = `http://localhost:3001/product/${name}/${name}Image`
+        window.location.href = `http://localhost:3000/product/${name}/${name}Image`
     }
     return (
         <Container>
