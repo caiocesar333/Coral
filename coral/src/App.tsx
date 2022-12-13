@@ -13,6 +13,7 @@ import { UserProfile } from './pages/UserProfile/UserProfile';
 import { MyOrders } from './pages/MyOrders/MyOrders';
 import { OrderDetails } from './pages/OrderDetails/OrderDetails';
 import { About } from './pages/About/About';
+import { SignUp } from './pages/SignUp/SignUp';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/handbags/1/" element={<Handbags />}></Route>
         <Route path="/handbags/2/:filter" element={<Handbags2 />}></Route>
         <Route path="/product/:productName/:imgUrl" element={<ProductPage />}></Route>
