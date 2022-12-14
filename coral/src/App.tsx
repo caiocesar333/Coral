@@ -14,6 +14,8 @@ import { MyOrders } from './pages/MyOrders/MyOrders';
 import { OrderDetails } from './pages/OrderDetails/OrderDetails';
 import { About } from './pages/About/About';
 import { SignUp } from './pages/SignUp/SignUp';
+import { PhoneVerification } from './pages/PhoneVerification/PhoneVerification';
+import { CodeVerification } from './pages/CodeVerification/CodeVerification';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/signup/register" element={<PhoneVerification />}></Route>
+        <Route path="/signup/register/otp" element={<CodeVerification />}></Route>
         <Route path="/handbags/1/" element={<Handbags />}></Route>
         <Route path="/handbags/2/:filter" element={<Handbags2 />}></Route>
         <Route path="/product/:productName/:imgUrl" element={<ProductPage />}></Route>
