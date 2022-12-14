@@ -1,4 +1,4 @@
-import { Container, H1, H2, InputDiv, P, Wrapper } from "./style";
+import { Container, H2, InputDiv, P, Wrapper } from "./style";
 import Wave from "react-wavify";
 import { BlueButton } from "../../components/Buttons/BlueButton/BlueButton";
 
