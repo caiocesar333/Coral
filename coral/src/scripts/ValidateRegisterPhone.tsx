@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom"
 
 
 export function ValidateRegisterPhone(phone: string, setError: React.Dispatch<React.SetStateAction<boolean>>) {
