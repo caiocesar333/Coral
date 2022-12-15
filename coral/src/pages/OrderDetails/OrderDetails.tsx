@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import { OrderDetailsTab } from "../../components/DetailsTab/OrderDetailsTab";
 import { Footer } from "../../components/Footer/Footer";
 import { Navbar } from "../../components/Navbar/Navbar";
@@ -10,11 +11,15 @@ import { Container, Wrapper } from "./style";
 
 export function OrderDetails(){
 
+    let {orderId} = useParams()
+
+    let str = orderId?.toString()
+
     return(
         <Container>
             <Navbar/>
-            <PageLabel from="Home" to="User Profile" andTo="order #123414" />
-            <PageTitle title="Order #123414" button={false}/>
+            <PageLabel from="Home" to="User Profile" andTo={"order #" + str?.substring(0, 8)} />
+            <PageTitle title={"Order #" + str?.substring(0, 8)} button={false}/>
             <Wrapper>
                 <UserMenu/>
                 <OrderDetailsTab/>

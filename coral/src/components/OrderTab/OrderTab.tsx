@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import "../../styles/global.css"
 import { Orders } from "./Orders/Orders";
 
@@ -8,7 +9,7 @@ import { TableColums } from "./TableColums/TableColums";
 
 export function OrderTab() {
 
-    const userId = "638c61b80918fe663eee71ed"
+    let {userId} = useParams()
 
     const [orders, setOrder] = useState([]);
     useEffect(() => {
@@ -45,7 +46,7 @@ export function OrderTab() {
                     <TableColums />
                     {orders.map((order: any, index: any) => {
                 return (
-                    <Orders orderId={"#"+order._id.substr(0, 8) + "..."} 
+                    <Orders orderId={order._id} 
                     date={order.createdAt}
                     amount={order.amount} 
                     status={order.status}/>
