@@ -1,8 +1,11 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import { P } from "../AddNewAddress/style";
 import { AddressDetails, Container, PaymentDetails, TextDiv, Wrapper, OrderDetails, Info } from "./style";
 
 
 export function OrderInformation() {
+
     return (
         <Container>
             <P>Order Information</P>

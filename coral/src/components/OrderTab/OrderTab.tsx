@@ -9,7 +9,7 @@ import { TableColums } from "./TableColums/TableColums";
 
 export function OrderTab() {
 
-    let {userId} = useParams()
+    let { userId } = useParams()
 
     const [orders, setOrder] = useState([]);
     useEffect(() => {
@@ -45,13 +45,13 @@ export function OrderTab() {
                 <STabPanel>
                     <TableColums />
                     {orders.map((order: any, index: any) => {
-                return (
-                    <Orders orderId={order._id} 
-                    date={order.createdAt}
-                    amount={order.amount} 
-                    status={order.status}/>
-                )
-            })}
+                        return (
+                            <Orders orderId={order._id}
+                                date={order.createdAt}
+                                amount={order.amount}
+                                status={order.status} />
+                        )
+                    })}
                 </STabPanel>
             </STabs>
         </Container>
