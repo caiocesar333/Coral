@@ -20,7 +20,7 @@ export function PhoneVerification() {
                     <MobileNumberCamp phone={phone} setPhone={setPhone} campName="Number" />
                     <P>A 4 digit code will be sent to this number.</P>
                     <button className="blue-button">Next</button>
-                    {error ? <ErrorSpan>Número com caractéres nao permitidos</ErrorSpan> : <></>}
+                    {error ? <ErrorSpan>Invalid characters</ErrorSpan> : <></>}
                 </form>
             </Wrapper>
             <Wave fill="#1b4b66"

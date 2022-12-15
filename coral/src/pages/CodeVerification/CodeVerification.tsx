@@ -1,28 +1,57 @@
 import { Container, H2, InputDiv, P, Wrapper } from "./style";
 import Wave from "react-wavify";
+import { useState } from "react";
+import { ValidateRegisterOtp } from "../../scripts/ValidateRegisterOtp";
+import { ErrorSpan } from "../PhoneVerification/style";
 
 export function CodeVerification() {
+
+    const [state, setState] = useState({
+        otp1:"",
+        otp2:"",
+        otp3:"",
+        otp4:"",
+    })
+
+    const [nonNumeric, setNonNumeric] = useState(false)
+    const [invalidOtp, setInvalidOtp] = useState(false)
+
+    function handleChange(evt:any) {
+        const value = evt.target.value;
+        setState({
+          ...state,
+          [evt.target.name]: value
+        });
+        console.log(state)
+      }
+
     return (
         <Container>
             <Wrapper>
                 <H2>Enter OTP</H2>
-                <P>A 4 digit codewas sent to your number.</P>
-                <form style={{ }} action="">
+                <P>A 4 digit code was sent to your number.</P>
+                <form style={{ }} onSubmit={(e)=> {e.preventDefault(); ValidateRegisterOtp(state, setNonNumeric, setInvalidOtp)} }>
                     <div style={{ width: "80%", display: "flex", gap: "25px",marginBottom:"25px" }} >
                         <InputDiv>
-                            <input maxLength={1} style={{ width: "100%", height: "100%", textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
+                            <input name="otp1" value={state.otp1} onChange={handleChange}  maxLength={1} style={{ width: "100%", height: "100%", 
+                            textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
                         </InputDiv>
                         <InputDiv>
-                            <input maxLength={1} style={{ width: "100%", height: "100%", textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
+                            <input name="otp2" value={state.otp2} onChange={handleChange}  maxLength={1} style={{ width: "100%", height: "100%", 
+                            textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
                         </InputDiv>
                         <InputDiv>
-                            <input maxLength={1} style={{ width: "100%", height: "100%", textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
+                            <input name="otp3" value={state.otp3} onChange={handleChange}  maxLength={1} style={{ width: "100%", height: "100%", 
+                            textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
                         </InputDiv>
                         <InputDiv>
-                            <input maxLength={1} style={{ width: "100%", height: "100%", textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
+                            <input name="otp4" value={state.otp4} onChange={handleChange}  maxLength={1} style={{ width: "100%", height: "100%", 
+                            textAlign: "center", border: "none", outline: "none", background: "#f1f1f1" }} />
                         </InputDiv>
                     </div>
                     <button className="blue-button">Next</button>
+                    {nonNumeric ? <ErrorSpan>Invalid characters</ErrorSpan> : <></>}
+                    {invalidOtp ? <ErrorSpan>Code is not valid </ErrorSpan> : <></>}
                 </form>
                 <P>Didn’t recieve the code? Request again</P>
             </Wrapper>
