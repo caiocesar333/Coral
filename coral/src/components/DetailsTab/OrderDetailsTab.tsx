@@ -18,9 +18,11 @@ export function OrderDetailsTab() {
                 </STabList>
                 <STabPanel>
                     <TableLabel />
-                    <CartItem order={true} actions={false} />
+                    <CartItem order={true} actions={false}  />
                     <OrderInformation />
                 </STabPanel>
+                <STabPanel></STabPanel>
+                <STabPanel></STabPanel>
             </STabs>
         </Container>
     )

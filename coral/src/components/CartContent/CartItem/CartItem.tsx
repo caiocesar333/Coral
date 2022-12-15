@@ -4,10 +4,11 @@ import { TextButtonBlue } from "../../TextComponents/TextButtons/TextButtonBlue"
 import { TextButtonRed } from "../../TextComponents/TextButtons/TextButtonRed";
 import { ProdCartItem } from "./ProdCartItem/ProdCartItem";
 import { ActionWrapper } from "./ProdCartItem/style";
+import { RenderCartItem } from "./RenderCartItem/RenderCartItem";
 import { Container, ProductWrapper, PriceWrapper, P, Wrapper } from "./style";
 
 export interface CartItemProps {
-    actions?: boolean,
+    actions: boolean,
     order?: boolean,
 }
 
@@ -50,8 +51,7 @@ export function CartItem({ actions, order }: CartItemProps) {
                 );
                 const my_orders = await api_response.json();
                 // my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
-                setOrder(my_orders);
-                console.log(orders.products)
+                setOrder(my_orders.products);
             } catch (err) { }
         };
         getOrder();
@@ -63,22 +63,7 @@ export function CartItem({ actions, order }: CartItemProps) {
             <>
                 {cart.map((carrinho: any, index: any) => {
                     return (
-                        <Container>
-                            <ProductWrapper>
-                                <ProdCartItem name={carrinho.name} desc={carrinho.desc} quantity={carrinho.quantity} />
-                            </ProductWrapper>
-                            <Wrapper>
-                                <PriceWrapper>
-                                    <P>$ {carrinho.price}</P>
-                                    <P>{carrinho.quantity}</P>
-                                    <P>$ {(carrinho.price * carrinho.quantity).toFixed(2)}</P>
-                                </PriceWrapper>
-                                <ActionWrapper>
-                                    <TextButtonBlue text="Move to Wishlist" />
-                                    <TextButtonRed text="Remove" />
-                                </ActionWrapper>
-                            </Wrapper>
-                        </Container>
+                        <RenderCartItem name={carrinho.name} desc={carrinho.desc} quantity={carrinho.quantity} price={carrinho.price} actions={actions} />
 
                     )
                 })
@@ -87,25 +72,9 @@ export function CartItem({ actions, order }: CartItemProps) {
         )
     } else {
         return (
-            <>{orders.products.map((produto: any, index: any) => {
+            <>{orders.map((produto: any, index: any) => {
                 return (
-                    <Container>
-                        <ProductWrapper>
-                            <ProdCartItem name={produto.name} desc={produto.desc} quantity={produto.quantity} />
-                        </ProductWrapper>
-                        <Wrapper>
-                            <PriceWrapper>
-                                <P>$ {produto.price}</P>
-                                <P>{produto.quantity}</P>
-                                <P>$ {(produto.price * produto.quantity).toFixed(2)}</P>
-                            </PriceWrapper>
-                            <ActionWrapper>
-                                <TextButtonBlue text="Move to Wishlist" />
-                                <TextButtonRed text="Remove" />
-                            </ActionWrapper>
-                        </Wrapper>
-                    </Container>
-
+                    <RenderCartItem name={produto.name} desc={produto.desc} quantity={produto.quantity} price={produto.price} actions={actions} />
                 )
             })
             }

@@ -11,7 +11,7 @@ export function Table({children}:TableProps) {
     return(
         <Container>
             <TableLabel/>
-            <CartItem/>
+            <CartItem actions={true}/>
             <DropDown text="Apply Coupon Code"/>
         </Container>
     )

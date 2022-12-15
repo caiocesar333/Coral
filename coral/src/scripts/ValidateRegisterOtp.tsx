@@ -17,7 +17,7 @@ export function ValidateRegisterOtp(state: {
 
     if (isNumeric(otpNumber)) {
         if (otpNumber === "1234") {
-            window.location.href = "/home"
+            window.location.href = "/user"
         }
         else {
             setInvalidOtp(true)
