@@ -1,11 +1,13 @@
+import { update } from "react-spring";
 import { Container, Ddd, Input, P, Wrapper } from "./style";
 
 export interface MobileNumberCampProps {
     campName: string,
- 
+    phone?:string,
+    setPhone?: React.Dispatch<React.SetStateAction<undefined>> | any
 }
 
-export function MobileNumberCamp({ campName, }: MobileNumberCampProps) {
+export function MobileNumberCamp({ campName,phone, setPhone }: MobileNumberCampProps) {
     
     let placeholder : Array<string> 
     placeholder = campName.split(" ", 2)
@@ -15,7 +17,7 @@ export function MobileNumberCamp({ campName, }: MobileNumberCampProps) {
             <P>{campName}</P>
             <Wrapper>
                 <Ddd placeholder="11"></Ddd>
-                <Input  placeholder={str}/>
+                <Input maxLength={11} value={phone} onChange={e=>setPhone(e.target.value)} placeholder={str}/>
             </Wrapper>
         </Container>
     )

@@ -11,7 +11,6 @@ export const Container = styled.div`
 `;
 
 export const InputDiv = styled.div`
-    padding: 12px 8px;
     width: 52px;
     height: 42px;
     background: #F1F1F1;
@@ -31,6 +30,7 @@ export const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     margin: 40px;
+    margin-top: 140px;
 `;
 
 export const H1 = styled.h1`

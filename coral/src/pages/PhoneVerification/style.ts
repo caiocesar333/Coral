@@ -45,3 +45,11 @@ export const P = styled.p`
     
 `;
 
+export const ErrorSpan = styled.p`
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #B00020;
+
+`;
