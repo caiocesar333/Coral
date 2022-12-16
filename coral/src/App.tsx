@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/global';
 import { Home } from './components/Layout/Home';
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
@@ -17,8 +17,10 @@ import { SignUp } from './pages/SignUp/SignUp';
 import { PhoneVerification } from './pages/PhoneVerification/PhoneVerification';
 import { CodeVerification } from './pages/CodeVerification/CodeVerification';
 import { NotFoundInUser } from './pages/NotFoundInUser/NotFoundInUser';
+import { MyProfile } from './pages/MyProfile/MyProfile';
 
 function App() {
+
   return (
     <Router>
       <Routes>
@@ -34,7 +36,7 @@ function App() {
         <Route path='/mycart' element={<MyCart />} ></Route>
         <Route path='/checkout' element={<CheckOut />} ></Route>
         <Route path='/payment' element={<CheckoutPayment />} ></Route>
-        <Route path='/:userId/personal' element={<UserProfile />} ></Route>
+        <Route path='/:userId' element={<MyProfile />} ></Route>
         <Route path='/:userId/notfound' element={<NotFoundInUser />} ></Route>
         <Route path='/:userId/myorders' element={<MyOrders />} ></Route>
         <Route path='/:userId/myorders/:orderId' element={<OrderDetails />} ></Route>

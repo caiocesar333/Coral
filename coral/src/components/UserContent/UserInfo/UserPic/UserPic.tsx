@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { storage } from "../../../../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
+import pfp from "../../../../assets/user/pfp.svg"
 import Avatar from '@mui/material/Avatar';
 import { SmallRedButton } from "../../../Buttons/WhiteButton/SmallRedButton/SmallRedButton";
 
 
 export function UserPic() {
-    const [image, setImage] = useState<any>();
-    const [url, setUrl] = useState<any>();
+    const [image, setImage] = useState<any>(pfp);
+    const [url, setUrl] = useState<any>(pfp);
 
     const handleImageChange = (e:any) => {
         if (e.target.files[0]) {
