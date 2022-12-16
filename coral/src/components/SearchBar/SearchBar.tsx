@@ -1,39 +1,40 @@
 import { InputDiv, Img, Input } from "./style";
 import Search from "../../assets/search.svg"
-import { useState } from "react";
+import {  useState } from "react";
 import "../../styles/global.css"
+import { SearchingGrid } from "./SearchingGrid/SearchingGrid";
 
 export interface SearchBarProps {
     children?: string,
     placeholder: string
+    showModal: boolean,
+    setShowModal: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const redirect = (item: string) => {
-    if(item==="handbags" || item==="Handbags"){
-        window.location.href = `/${item}/1`
-    }else{
-        let str = item.charAt(0).toUpperCase() + item.slice(1)
-        window.location.href = `/product/${str}/${str}Image`
+export function SearchBar({ placeholder,setShowModal, showModal  }: SearchBarProps) {
+
+    const [search, setSearch] = useState("")
+    const [handle, setHandle] = useState(false)
+
+    const handleRender=()=>{
+        if (search ==="") {
+            setHandle(false)
+        } else setHandle(true)
     }
-}
 
-
-export function SearchBar({ placeholder }: SearchBarProps) {
-
-    const [item, setItem] = useState("")
-
-    const handle = (e: any) => {
-        e.preventDefault()
-        redirect(item)
-    }
     return (
         <>
             <InputDiv >
                 <Img src={Search} alt="search" />
-                <form onSubmit={handle}>
-                    <Input onChange={event => setItem(event.target.value)} placeholder={placeholder} />
+                <form onSubmit={(e)=>{e.preventDefault();handleRender()}}>
+
+                    <Input onChange={event => setSearch(event.target.value)} placeholder={placeholder} />
                     <button className="buttonSubmit">Submit</button>
                 </form>
+            {
+                handle ? <SearchingGrid setShowModal={setShowModal} 
+                showModal={handle}  search={search} setSearch={setSearch}/> :<></>
+            }
             </InputDiv>
         </>
     )

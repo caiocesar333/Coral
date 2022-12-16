@@ -5,7 +5,11 @@ import { SearchBar } from "../SearchBar/SearchBar";
 import { Favorite } from "../Icons/Favorite";
 import { Profile } from "../Icons/Profile";
 import { Bag } from "../Icons/Bag";
+import { useState } from "react";
 export function Navbar() {
+
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <Container>
             <Wrapper>
@@ -13,7 +17,8 @@ export function Navbar() {
                 <NavCategory />
             </Wrapper>
             <UserSection>
-                <SearchBar placeholder="Search for products or brands....."/>
+                <SearchBar setShowModal={setShowModal} showModal={showModal} 
+                placeholder="Search for products or brands....."/>
                 <IconWrapper>
                     <Favorite/>
                     <Profile/>

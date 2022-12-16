@@ -27,3 +27,9 @@ export const Input = styled.input`
     border-radius: 4px;
     
 `
+
+export const Wrapper = styled.div`
+    display: flex;
+    width: 100%;
+    
+`;

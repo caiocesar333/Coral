@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './styles/global';
 import { Home } from './components/Layout/Home';
 import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
@@ -17,12 +16,14 @@ import { SignUp } from './pages/SignUp/SignUp';
 import { PhoneVerification } from './pages/PhoneVerification/PhoneVerification';
 import { CodeVerification } from './pages/CodeVerification/CodeVerification';
 import { NotFoundInUser } from './pages/NotFoundInUser/NotFoundInUser';
+import { SearchingGrid } from './components/SearchBar/SearchingGrid/SearchingGrid';
 
 function App() {
 
   return (
     <Router>
       <Routes>
+        <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/signup/register" element={<PhoneVerification />}></Route>

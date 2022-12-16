@@ -1,8 +1,5 @@
 import { CheckBox, CheckBoxLabel, Container, Item } from "./style";
-import checkbox from "../../assets/checkbox.svg"
-import checkboxChecked from "../../assets/checkboxC.svg"
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 
 export interface SelectFilterProps {
     open: boolean,
@@ -21,10 +18,6 @@ export function SelectFilter({ open, setOpen, filterName,filter,setFilter }: Sel
 
     const str = filterName;
     const str2 = str.charAt(0).toUpperCase() + str.slice(1);
-
-
-    const location = useLocation()
-    const filtering = location.pathname.split("/")[3]
 
     const handleFilters = (filterName: any) => {
         if (filter === "initial" && check ===false) {
