@@ -17,6 +17,7 @@ import { PhoneVerification } from './pages/PhoneVerification/PhoneVerification';
 import { CodeVerification } from './pages/CodeVerification/CodeVerification';
 import { NotFoundInUser } from './pages/NotFoundInUser/NotFoundInUser';
 import { EmailVerification } from './pages/EmailVerification/EmailVerification';
+import { Wishlist } from './pages/Wishlist/Wishlist';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/payment' element={<CheckoutPayment />} ></Route>
         <Route path=':userId' element={<UserProfile />} ></Route>
         <Route path='/:userId/personal' element={<UserProfile />} ></Route>
+        <Route path='/:userId/wishlist' element={<Wishlist />} ></Route>
         <Route path='/:userId/notfound' element={<NotFoundInUser />} ></Route>
         <Route path='/:userId/myorders' element={<MyOrders />} ></Route>
         <Route path='/:userId/myorders/:orderId' element={<OrderDetails />} ></Route>
