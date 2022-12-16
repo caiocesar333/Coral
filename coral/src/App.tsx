@@ -16,7 +16,7 @@ import { SignUp } from './pages/SignUp/SignUp';
 import { PhoneVerification } from './pages/PhoneVerification/PhoneVerification';
 import { CodeVerification } from './pages/CodeVerification/CodeVerification';
 import { NotFoundInUser } from './pages/NotFoundInUser/NotFoundInUser';
-import { SearchingGrid } from './components/SearchBar/SearchingGrid/SearchingGrid';
+import { EmailVerification } from './pages/EmailVerification/EmailVerification';
 
 function App() {
 
@@ -27,8 +27,8 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/signup/register" element={<PhoneVerification />}></Route>
-        <Route path="/signup/register/otp" element={<CodeVerification />}></Route>
         <Route path="/signup/register/:otpPhone" element={<CodeVerification />}></Route>
+        <Route path="/:userId/form" element={<EmailVerification />}></Route>
         <Route path="/handbags/1/" element={<Handbags />}></Route>
         <Route path="/handbags/2/:filter" element={<Handbags2 />}></Route>
         <Route path="/product/:productName/:imgUrl" element={<ProductPage />}></Route>

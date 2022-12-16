@@ -19,7 +19,7 @@ export function ValidateRegisterOtp(state: {
     const userId = localStorage.getItem(otpPhone)
     if (isNumeric(otpNumber)) {
         if (otpNumber === "1234") {
-            window.location.href = `/${userId}/personal`
+            window.location.href = `/${userId}/form`
         }
         else {
             setInvalidOtp(true)
