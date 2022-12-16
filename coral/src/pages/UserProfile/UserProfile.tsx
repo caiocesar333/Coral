@@ -9,8 +9,14 @@ import { Container, Wrapper } from "./style";
 
 export function UserProfile(){
 
+    const redirect =()=>{
+        if (localStorage.getItem("71993707525")!=="638c61b80918fe663eee71ed") {
+            window.location.href = "/signup"
+        }
+        else console.log("tudo ok")
+    }
     return(
-        <Container>
+        <Container onLoad={redirect}>
             <Navbar/>
             <PageLabel from="Home" to="User Profile" />
             <PageTitle title="Personal Information" button={false}/>
