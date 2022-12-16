@@ -12,7 +12,6 @@ import image9 from "../../assets/SignUp/9.png"
 import image10 from "../../assets/SignUp/10.png"
 
 export function SignUp() {
-
     return (
         <Container>
             <Wrapper >
@@ -62,7 +61,7 @@ export function SignUp() {
                 <H1>
                     The shopping destination you need
                 </H1>
-                <BlueButton text="Get Started"/>
+                <BlueButton getStarted={true} text="Get Started"/>
                 <H2>I already have an account</H2>
             </ContentWrapper>
         </Container>
