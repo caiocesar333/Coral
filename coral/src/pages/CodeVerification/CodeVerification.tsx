@@ -5,8 +5,8 @@ import { ValidateRegisterOtp } from "../../scripts/ValidateRegisterOtp";
 import { ErrorSpan } from "../PhoneVerification/style";
 import { useParams } from "react-router-dom";
 
-export function CodeVerification() {
 
+export function CodeVerification() {
     const {otpPhone} = useParams()
 
     const [state, setState] = useState({

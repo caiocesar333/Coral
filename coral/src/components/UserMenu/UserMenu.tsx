@@ -1,6 +1,7 @@
+import { useParams } from "react-router-dom";
 import { Container } from "./style";
 import { UserTab } from "./UserTab/UserTab";
-import { useParams } from "react-router-dom";
+
 export function UserMenu(){
 
     let {userId} = useParams()

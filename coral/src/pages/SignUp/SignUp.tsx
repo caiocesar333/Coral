@@ -12,6 +12,7 @@ import image9 from "../../assets/SignUp/9.png"
 import image10 from "../../assets/SignUp/10.png"
 
 export function SignUp() {
+
     return (
         <Container>
             <Wrapper >

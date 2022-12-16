@@ -15,7 +15,7 @@ export function ValidateRegisterPhone(phone: string, setError: React.Dispatch<Re
             setError(true)
         )
     }
+
     localStorage.clear()
     localStorage.setItem(phone, "638c61b80918fe663eee71ed");
-
 }

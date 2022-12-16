@@ -9,6 +9,7 @@ export interface UserTabProps{
 
 export function UserTab({text,linkTo}:UserTabProps){
 
+
     const redirect = ()=>{
         window.location.href=`/${linkTo}`
 

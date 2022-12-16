@@ -3,38 +3,16 @@ import { GenericCamp } from "../../../AddNewAddress/AddressForm/GenericCamp/Gene
 import { MobileNumberCamp } from "../../../AddNewAddress/AddressForm/MobileNumberCamp/MobileNumberCamp";
 import { Container, Wrapper } from "./style";
 
-
-export interface UserFormProps{
-    firstName:string,
-    username:string,
-    email:string,
-    lastName:string,
-    mobile:string,
-    date:string,
-    setFirstName:React.Dispatch<React.SetStateAction<string>>,
-    setLastName:React.Dispatch<React.SetStateAction<string>>,
-    setUsername:React.Dispatch<React.SetStateAction<string>>,
-    setEmail:React.Dispatch<React.SetStateAction<string>>,
-    setMobile:React.Dispatch<React.SetStateAction<string>>,
-    setDate:React.Dispatch<React.SetStateAction<string>>
-}
-
-
-
-
-export function UserForm({firstName,username,email,lastName,mobile,date,setDate,setEmail,setFirstName,setLastName,setMobile,setUsername}:UserFormProps) {
-    console.log(firstName)
+export function UserForm() {
     return (
-        <Container><form onSubmit={(e)=>{e.preventDefault();}}>
+        <Container>
             <Wrapper>
-                <input value={firstName} onChange={e=>{setFirstName(e.target.value)}}className="input" />
-                <input  value={lastName} onChange={e=>setLastName(e.target.value)}className="input" />
+                <GenericCamp campName="First Name"></GenericCamp>
+                <GenericCamp campName="Last Name"></GenericCamp>
             </Wrapper>
-            <input value={email} onChange={e=>setEmail(e.target.value)} className="input" />
-            <input  value={mobile} onChange={e=>setMobile(e.target.value)}className="input" />
-            <input  value={date} onChange={e=>setDate(e.target.value)}className="input" />
-            <button>submit</button>
-            </form>
+            <GenericCamp campName="Email"></GenericCamp>
+            <MobileNumberCamp campName="Number" ></MobileNumberCamp>
+            <DateForm campName="DD/MM/YYYY"/>
         </Container>
     )
 }
