@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import "../../styles/global.css"
 import { CartItem } from "../CartContent/CartItem/CartItem";
 import { TableLabel } from "../CartContent/ProductTable/Table/TableLabel/TableLabel";

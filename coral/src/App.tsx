@@ -16,6 +16,7 @@ import { About } from './pages/About/About';
 import { SignUp } from './pages/SignUp/SignUp';
 import { PhoneVerification } from './pages/PhoneVerification/PhoneVerification';
 import { CodeVerification } from './pages/CodeVerification/CodeVerification';
+import { NotFoundInUser } from './pages/NotFoundInUser/NotFoundInUser';
 
 function App() {
   return (
@@ -34,8 +35,10 @@ function App() {
         <Route path='/checkout' element={<CheckOut />} ></Route>
         <Route path='/payment' element={<CheckoutPayment />} ></Route>
         <Route path='/user' element={<UserProfile />} ></Route>
+        <Route path='/user/notfound' element={<NotFoundInUser />} ></Route>
         <Route path='/:userId/myorders' element={<MyOrders />} ></Route>
         <Route path='/:userId/myorders/:orderId' element={<OrderDetails />} ></Route>
+
       </Routes>
     </Router>
   );

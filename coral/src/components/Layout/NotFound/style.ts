@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 `;
 
 export const Img = styled.img`
