@@ -26,9 +26,17 @@ import { DropDownFooter } from "../../mobile/DropDownFooter/DropDownFooter"
 import { NavFixed } from "../../mobile/NavFixed/NavFixed"
 
 export function Home() {
+
+    const redirect =()=>{
+        if (localStorage.getItem("71993707525")!=="638c61b80918fe663eee71ed") {
+            window.location.href = "/signup"
+        }
+        else console.log("tudo ok")
+    }
+    
     return (<>
         <MediaQuery minWidth={1200}>
-            <Container>
+            <Container onLoad={redirect}>
                 <GlobalStyle />
                 <Navbar />
                 <Banner delay="We are currently experiencing local customs clearance

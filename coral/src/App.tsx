@@ -23,20 +23,20 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={<Home />}></Route>
+        <Route path=":userId/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/signup" element={<SignUp />}></Route>
         <Route path="/signup/register" element={<PhoneVerification />}></Route>
         <Route path="/signup/register/:otpPhone" element={<CodeVerification />}></Route>
-        <Route path="/:userId/form" element={<EmailVerification />}></Route>
-        <Route path="/handbags/1/" element={<Handbags />}></Route>
-        <Route path="/handbags/2/:filter" element={<Handbags2 />}></Route>
+        <Route path=":userId/form" element={<EmailVerification />}></Route>
+        <Route path=":userId/handbags/1/" element={<Handbags />}></Route>
+        <Route path=":userId/handbags/2/" element={<Handbags2 />}></Route>
         <Route path="/product/:productName/:imgUrl" element={<ProductPage />}></Route>
         <Route path="/NotFound" element={<NotFound />}></Route>
         <Route path='/mycart' element={<MyCart />} ></Route>
         <Route path='/checkout' element={<CheckOut />} ></Route>
         <Route path='/payment' element={<CheckoutPayment />} ></Route>
-        <Route path='/:userId' element={<UserProfile />} ></Route>
+        <Route path=':userId' element={<UserProfile />} ></Route>
         <Route path='/:userId/personal' element={<UserProfile />} ></Route>
         <Route path='/:userId/notfound' element={<NotFoundInUser />} ></Route>
         <Route path='/:userId/myorders' element={<MyOrders />} ></Route>

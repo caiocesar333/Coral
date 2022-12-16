@@ -12,7 +12,7 @@ export function Back({showModal,setShowModal,search}:BackProps){
 
     const redirect =()=>{
         if (search) {
-            window.location.href="/home"
+            window.location.href="/handbags/1"
         } else {
             setShowModal(prev=>!prev)
         }

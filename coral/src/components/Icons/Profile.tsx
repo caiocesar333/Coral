@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import  profile  from "../../assets/profile.svg";
 import { Img, } from "./style";
 
@@ -8,8 +9,10 @@ export interface ProfileProps{
 
 export function Profile({children}: ProfileProps){
 
+    const {userId} = useParams()
+
     const redirect = ()=>{
-        window.location.href = "/user"
+        window.location.href = `/${userId}`
     }
 
     return(

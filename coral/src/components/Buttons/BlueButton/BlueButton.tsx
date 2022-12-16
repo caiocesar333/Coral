@@ -10,7 +10,7 @@ export interface BlueButtonProps{
 export function BlueButton({text,order,setOrder,getStarted}:BlueButtonProps) {
     const redirect = () => {
         if(getStarted){
-            window.location.href = "register"
+            window.location.href = "signup/register"
         }
     }
 

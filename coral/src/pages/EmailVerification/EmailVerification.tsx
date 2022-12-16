@@ -8,9 +8,9 @@ import { useParams } from "react-router-dom";
 
 export function EmailVerification() {
 
-    // const redirect = () => {
-    //     window.location.href = `/${userId}/personal`
-    // }
+    const redirect = () => {
+        window.location.href = `/${userId}/personal`
+    }
     const [error, setError] = useState(false)
     const [newUsername, setUsername] = useState("")
 
@@ -47,7 +47,7 @@ export function EmailVerification() {
             <Wrapper>
                 <H1>Welcome to Coral</H1>
                 <H2>Enter your personal information</H2>
-                <form style={{ width: "80%" }} onSubmit={(e) => { e.preventDefault(); }}>
+                <form style={{ width: "80%" }} onSubmit={(e) => { e.preventDefault(); redirect() }}>
                     <P>Username</P>
                     <input type="text" className="input" onChange={(e)=>setUsername(e.target.value)} placeholder="Enter Username" />
                     <P>Password</P>

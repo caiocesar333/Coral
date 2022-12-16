@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import { Container, P } from "./style";
 
 export interface NavCategoryProps{
@@ -5,9 +6,13 @@ export interface NavCategoryProps{
 }
 
 export function NavCategory({active}: NavCategoryProps){
+
     const redirect = ()=>{
-        window.location.href = "/handbags/1"
+        window.location.href = `/${userId}/handbags/1`
     }
+
+    const {userId} = useParams()
+
     const redirectError = ()=>{
         window.location.href = "/NotFound"
     }

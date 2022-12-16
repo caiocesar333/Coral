@@ -1,10 +1,13 @@
+import { useParams } from "react-router-dom";
 import { Container, Next, Pages, Wrapper } from "./style";
 
 
 export function PaginationButtons() {
 
+    const {userId} = useParams()
+
     const redirect = (page:number)=>{
-        window.location.href = `http://localhost:3001/handbags/${page}`
+        window.location.href = `/${userId}/handbags/${page}`
     }
 
 
