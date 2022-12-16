@@ -29,4 +29,5 @@ export const UserSection = styled.div`
 export const IconWrapper = styled.div`
   display: flex;
   margin-right: 20px;
+  align-items: center;
 `

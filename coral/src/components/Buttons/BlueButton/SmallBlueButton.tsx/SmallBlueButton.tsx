@@ -8,12 +8,10 @@ export interface SmallBlueButtonProps {
 }
 
 export function SmallBlueButton({ text, order, setOrder,img }: SmallBlueButtonProps) {
-    // const orderPlaced = () => {
-    //     setOrder(!order)
-    // }
+ 
 
     return (
-        <Button //onClick={()=>{orderPlaced()}}//
+        <Button 
         >   {img ? <img alt="" src={img}></img>
             :<></>
             }

@@ -3,7 +3,6 @@ import { Navbar } from "../../components/Navbar/Navbar";
 import { NavigationNotFound } from "../../components/NavigationNotFound/NavigationNotFound";
 import { PageLabel } from "../../components/TextComponents/PageLabel/PageLabel";
 import { PageTitle } from "../../components/TextComponents/PageTitle/PageTitle";
-import { UserContent } from "../../components/UserContent/UserContent";
 import { UserMenu } from "../../components/UserMenu/UserMenu";
 import { Container, Wrapper } from "./style";
 

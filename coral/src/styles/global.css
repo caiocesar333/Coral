@@ -1,67 +1,94 @@
-*{
-    font-family: 'Inter', sans-serif;
+* {
+  font-family: "Inter", sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.active{
-    color: #fff;
-    background: #1B4B66;
-    outline: none;
-    border:none;
+.active {
+  color: #fff;
+  background: #1b4b66;
+  outline: none;
+  border: none;
 }
 
-.buttonSubmit{
-    display:none
+.buttonSubmit {
+  display: none;
 }
 
-.input{
-    padding: 16px 12px 16px 16px;
-    gap: 12px;
+.input {
+  padding: 16px 12px 16px 16px;
+  gap: 12px;
 
-    width: 90%;
-    border: none;
-    outline: none;
+  width: 90%;
+  border: none;
+  outline: none;
 
-    /* Grey */
+  /* Grey */
 
-    background: #F1F1F1;
-    border-radius: 4px;
-    &::placeholder{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        color: #626262;
-    }
+  background: #f1f1f1;
+  border-radius: 4px;
+  &::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #626262;
+  }
 }
 
-.blue-button{
+.blue-button {
+  padding: 2px 20px;
+  gap: 8px;
+
+  width: 180px;
+  height: 40px;
+
+  background: #1b4b66;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.blue-button-small {
     padding: 2px 20px;
     gap: 8px;
-
-    width: 180px;
-    height: 40px;
-
-    background: #1B4B66;
+  
+    width: 140px;
+    height: 35px;
+  
+    background: #1b4b66;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
+  }
 
+.blue-button-small::file-selector-button {
+  display: none;
 }
 
+.blue-button-small:hover {
+    cursor: pointer;
+    background: #ff8c4b;
+  }
 
-.blue-button:hover{
-        cursor: pointer;
-        background: #FF8C4B;
+.blue-button:hover {
+  cursor: pointer;
+  background: #ff8c4b;
 }

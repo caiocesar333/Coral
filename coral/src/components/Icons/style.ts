@@ -8,6 +8,10 @@ export const Container = styled.div`
     margin-right: 20px;
 `;
 
+export const Wrapper = styled.div`
+`;
+
+
 
 export const Img = styled.img`
     margin-right:5px;

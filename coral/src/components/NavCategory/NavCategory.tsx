@@ -6,7 +6,7 @@ export interface NavCategoryProps{
 
 export function NavCategory({active}: NavCategoryProps){
     const redirect = ()=>{
-        window.location.href = "/handbags"
+        window.location.href = "/handbags/1"
     }
     const redirectError = ()=>{
         window.location.href = "/NotFound"

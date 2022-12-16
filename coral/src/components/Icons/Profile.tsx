@@ -1,5 +1,5 @@
 import  profile  from "../../assets/profile.svg";
-import { Img } from "./style";
+import { Img, } from "./style";
 
 export interface ProfileProps{
     children?: string
@@ -7,7 +7,12 @@ export interface ProfileProps{
 
 
 export function Profile({children}: ProfileProps){
+
+    const redirect = ()=>{
+        window.location.href = "/user"
+    }
+
     return(
-        <Img width="24" src={profile} alt="" />
+        <Img onClick={redirect} width="24" src={profile} alt="" />
     )
 }
