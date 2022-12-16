@@ -1,9 +1,7 @@
-import { Container } from "./style";
 import { useState } from "react";
 import { storage } from "../../../../firebase";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
 import Avatar from '@mui/material/Avatar';
-import { display } from "@mui/system";
 import { SmallRedButton } from "../../../Buttons/WhiteButton/SmallRedButton/SmallRedButton";
 
 

@@ -34,8 +34,8 @@ function App() {
         <Route path='/mycart' element={<MyCart />} ></Route>
         <Route path='/checkout' element={<CheckOut />} ></Route>
         <Route path='/payment' element={<CheckoutPayment />} ></Route>
-        <Route path='/user' element={<UserProfile />} ></Route>
-        <Route path='/user/notfound' element={<NotFoundInUser />} ></Route>
+        <Route path='/:userId' element={<UserProfile />} ></Route>
+        <Route path='/:userId/notfound' element={<NotFoundInUser />} ></Route>
         <Route path='/:userId/myorders' element={<MyOrders />} ></Route>
         <Route path='/:userId/myorders/:orderId' element={<OrderDetails />} ></Route>
 
