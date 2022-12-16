@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Título do projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto final integrado para o programa de bolsas da Compasso Uol. Este Repositorio funciona em conjunto com o repositorio [coralApi](https://github.com/caiocesar333/coralAPI) 
 
-## Available Scripts
 
-In the project directory, you can run:
+### 📋 Pré-requisitos
 
-### `npm start`
+```
+VScode e NodeJS
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🔧 Instalação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Clone o repositorio (git clone)
+Instale as dependências (npm install)
+As validações de OTP, usuário e senha são feitas respectivamente com 1234, admin e admin
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⌨️ E testes de estilo de codificação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+O projeto pode ser visto em deploy no [vercel](https://vercel.com/caiocesar333/coral)
+```
 
-### `npm run eject`
+## 🛠️ Construído com
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Mencione as ferramentas que você usou para criar seu projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React
+* Firebase
+* Typescript
+* Framer-Motion
+* Styled-Components
+* MongoDb (Mongoose)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🖇️ Colaborando
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
 
-## Learn More
+## 📌 Versão
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as tags do repositorio
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Atualmente o projeto se encontra na versão:
+
+```
+1.0
+``` 
+
+## ✒️ Autores
+
+Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+
+* **Caio César** - - [caiocesar333](https://github.com/caiocesar333)
+
+Você também pode ver a lista de todos os [colaboradores](https://github.com/caiocesar333/coral/colaboradores) que participaram deste projeto.
+
+## 📄 Licença
+
+Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/caiocesar333/coral/licenca) para detalhes.
+
