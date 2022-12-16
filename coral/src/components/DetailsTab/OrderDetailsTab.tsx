@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import "../../styles/global.css"
 import { CartItem } from "../CartContent/CartItem/CartItem";
 import { TableLabel } from "../CartContent/ProductTable/Table/TableLabel/TableLabel";
@@ -7,6 +8,8 @@ import { Container, STab, STabList, STabPanel, STabs } from "./style";
 
 
 export function OrderDetailsTab() {
+
+    const [subTotal, setPrice] = useState(0)
 
     return (
         <Container>
@@ -18,8 +21,8 @@ export function OrderDetailsTab() {
                 </STabList>
                 <STabPanel>
                     <TableLabel />
-                    <CartItem order={true} actions={false}  />
-                    <OrderInformation />
+                    <CartItem order={true} actions={false} setPrice={setPrice} subTotal={subTotal} />
+                    <OrderInformation price={subTotal}/>
                 </STabPanel>
                 <STabPanel></STabPanel>
                 <STabPanel></STabPanel>

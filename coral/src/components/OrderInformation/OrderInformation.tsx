@@ -1,10 +1,14 @@
-
 import { P } from "../AddNewAddress/style";
 import { AddressDetails, Container, PaymentDetails, TextDiv, Wrapper, OrderDetails, Info } from "./style";
 
+export interface OrderInformationProps{
+    price:number,
+}
 
-export function OrderInformation() {
 
+export function OrderInformation({price}:OrderInformationProps) {
+
+    let discount = 13.40
     return (
         <Container>
             <P>Order Information</P>
@@ -15,11 +19,11 @@ export function OrderInformation() {
                     </TextDiv>
                     <TextDiv>
                         <Info>Sub Total</Info>
-                        <Info>$119.69</Info>
+                        <Info>{price}</Info>
                     </TextDiv>
                     <TextDiv>
                         <Info>Discount</Info>
-                        <Info>-$13.40</Info>
+                        <Info>-${discount}</Info>
                     </TextDiv>
                     <TextDiv>
                         <Info>Delivery Fee</Info>
@@ -27,7 +31,7 @@ export function OrderInformation() {
                     </TextDiv>
                     <TextDiv>
                         <Info>Grand Total</Info>
-                        <Info>$106.29</Info>
+                        <Info>${(price - discount).toFixed(2)}</Info>
                     </TextDiv>
                 </OrderDetails>
                 <PaymentDetails>

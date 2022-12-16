@@ -2,7 +2,6 @@ import { useParams } from "react-router-dom";
 import { OrderDetailsTab } from "../../components/DetailsTab/OrderDetailsTab";
 import { Footer } from "../../components/Footer/Footer";
 import { Navbar } from "../../components/Navbar/Navbar";
-import { OrderInformation } from "../../components/OrderInformation/OrderInformation";
 import { PageLabel } from "../../components/TextComponents/PageLabel/PageLabel";
 import { PageTitle } from "../../components/TextComponents/PageTitle/PageTitle";
 import { UserMenu } from "../../components/UserMenu/UserMenu";

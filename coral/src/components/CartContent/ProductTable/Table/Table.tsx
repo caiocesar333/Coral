@@ -11,7 +11,7 @@ export function Table({children}:TableProps) {
     return(
         <Container>
             <TableLabel/>
-            <CartItem actions={true}/>
+            <CartItem setPrice={""} subTotal={0} actions={true}/>
             <DropDown text="Apply Coupon Code"/>
         </Container>
     )

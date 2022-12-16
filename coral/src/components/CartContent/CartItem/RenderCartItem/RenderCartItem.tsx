@@ -11,13 +11,15 @@ export interface RenderCartItemProps {
     name: string,
     desc: string,
     quantity: number,
-    price: number
+    price: number,
+    subTotal:number,
+    setPrice: React.Dispatch<React.SetStateAction<number>> | any
 }
 
-export function RenderCartItem({ actions, order, name, desc, quantity, price }: RenderCartItemProps) {
+export function RenderCartItem({ actions, order, name, desc, quantity, price,setPrice,subTotal }: RenderCartItemProps) {
 
     return (
-        <Container>
+        <Container onLoad={()=>setPrice((subTotal: number) => subTotal +(price*quantity))}>
             <ProductWrapper>
                 <ProdCartItem name={name} desc={desc} quantity={quantity.toString()} />
             </ProductWrapper>

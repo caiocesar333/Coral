@@ -1,18 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { TextButtonBlue } from "../../TextComponents/TextButtons/TextButtonBlue";
-import { TextButtonRed } from "../../TextComponents/TextButtons/TextButtonRed";
-import { ProdCartItem } from "./ProdCartItem/ProdCartItem";
-import { ActionWrapper } from "./ProdCartItem/style";
 import { RenderCartItem } from "./RenderCartItem/RenderCartItem";
-import { Container, ProductWrapper, PriceWrapper, P, Wrapper } from "./style";
 
 export interface CartItemProps {
     actions: boolean,
     order?: boolean,
+    subTotal: number,
+    setPrice: React.Dispatch<React.SetStateAction<number>> | any
 }
 
-export function CartItem({ actions, order }: CartItemProps) {
+export function CartItem({ actions, order, subTotal, setPrice }: CartItemProps) {
 
     let { orderId } = useParams()
     const [cart, setCart] = useState([]);
@@ -52,18 +49,21 @@ export function CartItem({ actions, order }: CartItemProps) {
                 const my_orders = await api_response.json();
                 // my_prod.map((prod: any, index: any) => { console.log(my_prod[index]) })
                 setOrder(my_orders.products);
+                
             } catch (err) { }
+
         };
         getOrder();
         getCart();
-    }, []);
+    },);
 
     if (!order) {
         return (
             <>
                 {cart.map((carrinho: any, index: any) => {
                     return (
-                        <RenderCartItem name={carrinho.name} desc={carrinho.desc} quantity={carrinho.quantity} price={carrinho.price} actions={actions} />
+                        <RenderCartItem setPrice={setPrice} name={carrinho.name} desc={carrinho.desc}
+                            quantity={carrinho.quantity} price={carrinho.price} actions={actions} subTotal={subTotal} />
 
                     )
                 })
@@ -73,8 +73,12 @@ export function CartItem({ actions, order }: CartItemProps) {
     } else {
         return (
             <>{orders.map((produto: any, index: any) => {
+
+                
+
                 return (
-                    <RenderCartItem name={produto.name} desc={produto.desc} quantity={produto.quantity} price={produto.price} actions={actions} />
+                    <RenderCartItem setPrice={setPrice} name={produto.name} desc={produto.desc}
+                        quantity={produto.quantity} price={produto.price} actions={actions} subTotal={subTotal} />
                 )
             })
             }
