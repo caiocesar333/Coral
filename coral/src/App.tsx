@@ -19,6 +19,7 @@ import { NotFoundInUser } from './pages/NotFoundInUser/NotFoundInUser';
 import { EmailVerification } from './pages/EmailVerification/EmailVerification';
 import { Wishlist } from './pages/Wishlist/Wishlist';
 import { Address } from './pages/Address/Address';
+import { MyReviews } from './pages/MyReviews/MyReviews';
 
 function App() {
 
@@ -42,8 +43,9 @@ function App() {
         <Route path='/:userId/personal' element={<UserProfile />} ></Route>
         <Route path='/:userId/wishlist' element={<Wishlist />} ></Route>
         <Route path='/:userId/address' element={<Address />} ></Route>
-        <Route path='/:userId/notfound' element={<NotFoundInUser />} ></Route>
+        <Route path='/:userId/reviews' element={<MyReviews/>} ></Route>
         <Route path='/:userId/myorders' element={<MyOrders />} ></Route>
+        <Route path='/:userId/notfound' element={<NotFoundInUser />} ></Route>
         <Route path='/:userId/myorders/:orderId' element={<OrderDetails />} ></Route>
 
       </Routes>
