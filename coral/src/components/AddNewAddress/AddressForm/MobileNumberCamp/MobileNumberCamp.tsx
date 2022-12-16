@@ -16,7 +16,7 @@ export function MobileNumberCamp({ campName,phone, setPhone }: MobileNumberCampP
             <P>{campName}</P>
             <Wrapper>
                 <Ddd placeholder="11"></Ddd>
-                <Input maxLength={11} value={phone} onChange={e=>setPhone(e.target.value)} placeholder={str}/>
+                <Input type="password" maxLength={11} value={phone} onChange={e=>setPhone(e.target.value)} placeholder={str}/>
             </Wrapper>
         </Container>
     )

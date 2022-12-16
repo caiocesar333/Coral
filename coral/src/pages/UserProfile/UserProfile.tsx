@@ -19,7 +19,7 @@ export function UserProfile(){
         <Container onLoad={redirect}>
             <Navbar/>
             <PageLabel from="Home" to="User Profile" />
-            <PageTitle title="Personal Information" button={false}/>
+            <PageTitle title="Personal Information" button={true}/>
             <Wrapper>
                 <UserMenu/>
                 <UserContent/>

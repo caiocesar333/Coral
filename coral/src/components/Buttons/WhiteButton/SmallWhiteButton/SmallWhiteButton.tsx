@@ -6,8 +6,14 @@ export interface SmallWhiteButtonProps{
 }
 
 export function SmallWhiteButton({text,img}:SmallWhiteButtonProps) {
+
+    const redirect =()=>{
+        localStorage.clear()
+        window.location.href = "/signup"
+    }
+
     return(
-        <Button>
+        <Button onClick={redirect}>
             {img ? <img alt="" src={img}></img>
             :<></>
             }

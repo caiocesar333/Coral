@@ -3,8 +3,12 @@ import { Media } from "../Media/Media";
 import { Container, P, TextDiv, Left, Right } from "./style";
 
 
-export function Footer(){
-    return(
+export function Footer() {
+    const redirect = () => {
+        window.location.href = "/about"
+    }
+
+    return (
         <Container>
             <Left>
                 <TextDiv>
@@ -18,7 +22,7 @@ export function Footer(){
                     <P>Jewellery</P>
                 </TextDiv>
                 <TextDiv>
-                    <P>About</P>
+                    <P onClick={redirect}>About</P>
                     <P>Contact Us</P>
                     <P>About Us</P>
                     <P>Careers</P>
@@ -35,8 +39,8 @@ export function Footer(){
                 </TextDiv>
             </Left>
             <Right>
-                <Media/>
-                <FooterInfo/>
+                <Media />
+                <FooterInfo />
             </Right>
         </Container>
     )
