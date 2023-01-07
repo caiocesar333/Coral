@@ -7,10 +7,11 @@ export interface BlueButtonProps{
     setOrder?:  React.Dispatch<React.SetStateAction<boolean>>,
     getStarted?: boolean,
     wishlist?:boolean,
-    address?:boolean
+    address?:boolean,
+    next?: boolean
 }
 
-export function BlueButton({text,order,setOrder,getStarted,wishlist,address}:BlueButtonProps) {
+export function BlueButton({text,order,setOrder,getStarted,wishlist,address,next}:BlueButtonProps) {
     
     const {userId} = useParams()
 
@@ -21,7 +22,12 @@ export function BlueButton({text,order,setOrder,getStarted,wishlist,address}:Blu
             window.location.href = `/${userId}/handbags/1`
         } else if(address){
             window.location.href = `/NotFound`
+        } else if(order){
+            window.location.href = `/checkout`
+        }else if(next){
+            window.location.href = `/payment`
         }
+        
     }
 
 

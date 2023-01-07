@@ -35,7 +35,7 @@ export function Modal({ showModal, setShowModal }: ModalProps) {
                 <Background ref={modalRef} onClick={closeModal} >
                     <animated.div style={animation}>
                                 <Container>
-                                    <Back showModal={showModal} setShowModal={setShowModal}></Back>
+                                    <Back handle={true}  showModal={showModal} setShowModal={setShowModal}></Back>
                                     <ProductBag></ProductBag>
                                     <TotalPrice></TotalPrice>
                                     <Pincode placeholder="Coupon Code"></Pincode>

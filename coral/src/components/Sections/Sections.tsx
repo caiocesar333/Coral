@@ -1,21 +1,26 @@
 import { Container, H3, Img } from "./style";
 
-export interface SectionsProps{
+export interface SectionsProps {
     children?: string,
     image: string,
-    title:string,
-    url:string
+    title: string,
+    url: string,
+    userId: string | undefined
 }
 
-export function Sections({image,title,url}:SectionsProps ){
+export function Sections({ image, title, url, userId }: SectionsProps) {
 
-    const redirect = ()=>{
-        window.location.href = url
+    const testUrl = () => {
+        if (url !== "NotFound") {
+                window.location.href = `/${userId}/${url}/1/`
+        } else if (url === "NotFound") {
+                window.location.href = `/${url}`
+        }
     }
 
-    return(
+    return (
         <Container>
-            <Img onClick={redirect} src={image} alt="" />
+            <Img onClick={testUrl} src={image} alt="" />
             <H3>{title}</H3>
         </Container>
     )

@@ -12,14 +12,14 @@ export interface RenderCartItemProps {
     desc: string,
     quantity: number,
     price: number,
-    subTotal:number,
+    subTotal: number,
     setPrice: React.Dispatch<React.SetStateAction<number>> | any
 }
 
-export function RenderCartItem({ actions, order, name, desc, quantity, price,setPrice,subTotal }: RenderCartItemProps) {
+export function RenderCartItem({ actions, order, name, desc, quantity, price, setPrice, subTotal }: RenderCartItemProps) {
 
     return (
-        <Container onLoad={()=>setPrice((subTotal: number) => subTotal +(price*quantity))}>
+        <Container onLoad={() => setPrice((subTotal: number) => subTotal + (price * quantity))}>
             <ProductWrapper>
                 <ProdCartItem name={name} desc={desc} quantity={quantity.toString()} />
             </ProductWrapper>
@@ -29,10 +29,12 @@ export function RenderCartItem({ actions, order, name, desc, quantity, price,set
                     <P>{quantity}</P>
                     <P>$ {(price * quantity).toFixed(2)}</P>
                 </PriceWrapper>
-                { actions ? <><ActionWrapper>
-                    <TextButtonBlue text="Move to Wishlist" />
-                    <TextButtonRed text="Remove" />
-                </ActionWrapper></> : <></>}
+                {actions ? <>
+                    <ActionWrapper>
+                        <TextButtonBlue text="Move to Wishlist" />
+                        <TextButtonRed text="Remove" />
+                    </ActionWrapper></>
+                    : <></>}
             </Wrapper>
         </Container>
     )

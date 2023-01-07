@@ -7,7 +7,7 @@ export function NavgationCheckout() {
     return(
         <Container>
             <TextButtonBlue text="Back to cart"/>
-            <BlueButton text="Next" />
+            <BlueButton text="Next" next={true} />
         </Container>
     )
 }

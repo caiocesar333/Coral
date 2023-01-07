@@ -9,6 +9,7 @@ export const Blue = styled.p`
     &:hover{
         cursor: pointer;
     }
+    
 `;
 
 export const Red = styled.p`

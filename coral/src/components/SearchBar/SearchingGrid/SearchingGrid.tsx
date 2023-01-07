@@ -7,10 +7,12 @@ export interface SearchingGridProps {
     search: string,
     setSearch: React.Dispatch<React.SetStateAction<string>>
     showModal: boolean,
-    setShowModal: React.Dispatch<React.SetStateAction<boolean>>
+    setShowModal: React.Dispatch<React.SetStateAction<boolean>>,
+    handle: boolean,
+    setHandle:React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export function SearchingGrid({ search, setSearch, showModal, setShowModal }: SearchingGridProps) {
+export function SearchingGrid({ search, setSearch, showModal, setShowModal, handle, setHandle }: SearchingGridProps) {
 
     const modalRef = useRef(null);
     const animation = useSpring({
@@ -30,7 +32,7 @@ export function SearchingGrid({ search, setSearch, showModal, setShowModal }: Se
         <Background ref={modalRef} onClick={closeModal} >
             <animated.div style={animation}>
                 <Container>
-                    <SearchShowCase showModal={showModal} setShowModal={setShowModal} search={search} setSearch={setSearch}/>
+                    <SearchShowCase handle={handle} setHandle={setHandle} showModal={showModal} setShowModal={setShowModal} search={search} setSearch={setSearch}/>
                 </Container>
             </animated.div>
         </Background>

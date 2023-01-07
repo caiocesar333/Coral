@@ -7,11 +7,13 @@ export interface SearchingGridProps{
     search:string,
     setSearch:React.Dispatch<React.SetStateAction<string>>
     showModal: boolean,
-    setShowModal: React.Dispatch<React.SetStateAction<boolean>>
+    setShowModal: React.Dispatch<React.SetStateAction<boolean>>,
+    handle: boolean,
+    setHandle:React.Dispatch<React.SetStateAction<boolean>>
 }
 
 
-export function SearchShowCase({search,setSearch,showModal, setShowModal }:SearchingGridProps){
+export function SearchShowCase({search, setSearch, showModal, setShowModal, handle, setHandle}:SearchingGridProps){
 
     const [products, setProducts] = useState([])
 
@@ -40,7 +42,7 @@ export function SearchShowCase({search,setSearch,showModal, setShowModal }:Searc
 
     return(
         <Container>
-            <Back search={true} showModal={showModal} setShowModal={setShowModal}></Back>
+            <Back handle={handle} setHandle={setHandle} search={true} showModal={showModal} setShowModal={setShowModal}></Back>
             <SearchBag search={search} />
         </Container>
     )

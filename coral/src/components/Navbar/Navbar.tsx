@@ -6,6 +6,8 @@ import { Favorite } from "../Icons/Favorite";
 import { Profile } from "../Icons/Profile";
 import { Bag } from "../Icons/Bag";
 import { useState } from "react";
+
+
 export function Navbar() {
 
     const [showModal, setShowModal] = useState(false)

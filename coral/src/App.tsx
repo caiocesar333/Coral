@@ -34,7 +34,7 @@ function App() {
         <Route path=":userId/form" element={<EmailVerification />}></Route>
         <Route path=":userId/handbags/1/" element={<Handbags />}></Route>
         <Route path=":userId/handbags/2/" element={<Handbags2 />}></Route>
-        <Route path="/product/:productName/:imgUrl" element={<ProductPage />}></Route>
+        <Route path=":userId/:productName/:imgUrl" element={<ProductPage />}></Route>
         <Route path="/NotFound" element={<NotFound />}></Route>
         <Route path='/mycart' element={<MyCart />} ></Route>
         <Route path='/checkout' element={<CheckOut />} ></Route>

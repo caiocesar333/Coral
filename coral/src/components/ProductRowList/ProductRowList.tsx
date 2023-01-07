@@ -8,6 +8,7 @@ import image2 from "../../assets/products/image2.png"
 import image3 from "../../assets/products/image3.png"
 
 import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
 
 export function ProductRowList() {
     
@@ -19,6 +20,7 @@ export function ProductRowList() {
      setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
    }, [])
 
+   const {userId} = useParams()
 
     const produtos = [{
         image: image,
@@ -79,7 +81,7 @@ export function ProductRowList() {
          drag="x"
          dragConstraints={{right: 0, left:-width}}>
             {produtos.map((produto, index) => (
-                <ProductRow image={produto.image} name={produto.name}
+                <ProductRow userId={userId} image={produto.image} name={produto.name}
                     description={produto.description} price={produto.price}></ProductRow>
             ))}
         </Container>

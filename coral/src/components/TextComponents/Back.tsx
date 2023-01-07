@@ -4,22 +4,18 @@ import arrow from "../../assets/arrowBack.svg"
 export interface BackProps{
     showModal:boolean,
     setShowModal:React.Dispatch<React.SetStateAction<boolean>>,
-    search?:boolean
+    search?:boolean,
+    handle: boolean,
+    setHandle?:React.Dispatch<React.SetStateAction<boolean>>
 }
 
 
-export function Back({showModal,setShowModal,search}:BackProps){
+export function Back({showModal,setShowModal,search, handle, setHandle}:BackProps){
 
-    const redirect =()=>{
-        if (search) {
-            window.location.href="/handbags/1"
-        } else {
-            setShowModal(prev=>!prev)
-        }
-    }
+
     return(
-        <Container onClick={redirect}>
-            <Img src={arrow}/>
+        <Container >
+            <Img src={arrow} onClick={e=>{if(setHandle){ setHandle(false)}}}/>
             <P>Back</P>
         </Container>
     )

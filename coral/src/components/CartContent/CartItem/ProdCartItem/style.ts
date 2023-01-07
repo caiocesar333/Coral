@@ -14,6 +14,8 @@ export const Wrapper = styled.div`
 export const ActionWrapper = styled.div`
     display: flex;
     gap: 50px;
+    justify-content: flex-start;
+    align-items: center;
 `;
 
 export const Img = styled.img`

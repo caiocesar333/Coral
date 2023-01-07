@@ -3,6 +3,7 @@ import Search from "../../assets/search.svg"
 import {  useState } from "react";
 import "../../styles/global.css"
 import { SearchingGrid } from "./SearchingGrid/SearchingGrid";
+import { Handle } from "../QuantityHandle/style";
 
 export interface SearchBarProps {
     children?: string,
@@ -32,7 +33,7 @@ export function SearchBar({ placeholder,setShowModal, showModal  }: SearchBarPro
                     <button className="buttonSubmit">Submit</button>
                 </form>
             {
-                handle ? <SearchingGrid setShowModal={setShowModal} 
+                handle ? <SearchingGrid handle={handle} setHandle={setHandle} setShowModal={setShowModal} 
                 showModal={handle}  search={search} setSearch={setSearch}/> :<></>
             }
             </InputDiv>
